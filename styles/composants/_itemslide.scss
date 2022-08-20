@@ -1,0 +1,71 @@
+.slider {
+    position: relative;
+    margin: 2rem auto;
+    width: 80%;
+    max-width: 70rem;
+    height: 38rem;
+    @include flex(space-between, flex-start, column);
+
+    &--btn {
+        width: 100%;
+        padding: 2rem;
+        @include flex(space-between, center, row);
+
+        &__next, &__previous {
+            width: 5rem;
+            cursor: pointer;
+            transition: all 200ms ease-in-out;
+
+        }
+
+        &__next:hover {
+            transform: translateX(3rem);
+        }
+
+        &__previous{
+            
+            &:hover {
+            transform: translateX(-3rem);
+            }
+        }
+    }
+}
+
+.item {
+    display: none;
+
+    &--title {
+        font-family: 'Storybook', cursive;
+        margin-bottom: 3rem;
+        font-size: 2rem;
+    }
+
+    &--text {
+        line-height: 2rem;
+        font-weight: 400;
+        font-size: 1.7rem;
+
+        strong {
+            font-weight: 600;
+        }
+    }
+}
+
+.active {
+    animation: slide 500ms;
+    display: block;
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(30rem);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+
+}

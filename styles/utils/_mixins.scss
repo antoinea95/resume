@@ -1,0 +1,14 @@
+// flexbox 
+
+@mixin flex ($justify, $align, $direction) {
+    display: flex;
+    justify-content: $justify;
+    flex-direction: $direction;
+    align-items: $align;
+}
+
+@mixin tabletScreen {
+    @media screen and (min-width:768px) {
+        @content
+    }
+}
