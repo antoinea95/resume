@@ -1,13 +1,15 @@
 .slider {
     position: relative;
-    margin: 2rem auto;
-    width: 80%;
-    max-width: 70rem;
-    height: 38rem;
-    @include flex(space-between, flex-start, column);
+    margin: 2.5rem auto;
+    @include flex(center, center, column);
+    width: 90%;
+    max-width: 95rem;
+    @include desktopScreen {
+        height: 100vh;
+    }
 
     &--btn {
-        width: 100%;
+        width: 75%;
         padding: 2rem;
         @include flex(space-between, center, row);
 
@@ -15,24 +17,35 @@
             width: 5rem;
             cursor: pointer;
             transition: all 200ms ease-in-out;
-
         }
 
-        &__next:hover {
-            transform: translateX(3rem);
-        }
+        @include tabletScreen {
 
-        &__previous{
-            
-            &:hover {
-            transform: translateX(-3rem);
+            &__next:hover {
+                transform: translateX(3rem);
             }
+    
+            &__previous{
+                
+                &:hover {
+                transform: translateX(-3rem);
+                }
+            }
+        }
+
+        @include desktopScreen{
+            position: absolute;
+            width: 100%;
+            top: 50%;
+            transform: translateY(-50%);
         }
     }
 }
 
 .item {
     display: none;
+    width: 80%;
+    max-width: 70rem;
 
     &--title {
         font-family: 'Storybook', cursive;
@@ -43,7 +56,7 @@
     &--text {
         line-height: 2rem;
         font-weight: 400;
-        font-size: 1.7rem;
+        font-size: 1.5rem;
 
         strong {
             font-weight: 600;

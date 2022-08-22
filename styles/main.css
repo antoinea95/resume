@@ -52,74 +52,109 @@ html {
 body {
   min-width: 375px;
   margin: 0 auto;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 300;
   font-size: 1.5rem;
 }
 
 .header {
-  margin: 3rem;
-  position: relative;
+  z-index: 1;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  padding: 3rem 3rem 0 3rem;
+  background-color: white;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
   align-items: center;
 }
-
 .header--logo img {
   width: 5rem;
 }
-
 .header--burger {
   float: right;
   font-size: 1.8rem;
   cursor: pointer;
 }
-
+@media screen and (min-width: 768px) {
+  .header--burger {
+    display: none;
+  }
+}
 .header--nav {
   position: absolute;
+  top: 90%;
   right: -50%;
-  top: 80%;
-  opacity: 0%;
-}
-
-.header--navOn {
-  z-index: 1;
+  opacity: 0;
+  transition: all 300ms ease-in-out;
   background-color: white;
   height: 17rem;
-  opacity: 100%;
-  display: block;
-  position: absolute;
-  right: -10%;
-  top: 80%;
   padding: 1rem 2rem;
-  transition: all 300ms ease-in-out;
 }
-
-.header--navOn i {
+@media screen and (min-width: 768px) {
+  .header--nav {
+    opacity: 1;
+    position: initial;
+    height: auto;
+    width: 70%;
+    max-width: 50rem;
+    float: right;
+  }
+}
+.header--nav i {
   float: right;
 }
-
-.header--navOn ul {
+.header--nav ul {
   text-align: right;
   line-height: 3.5rem;
   font-weight: 600;
-  font-size: 1.8rem;
-  text-transform: uppercase;
+  font-size: 1.6rem;
 }
-
-.header--navOn ul li a {
+.header--nav ul li {
+  position: relative;
+}
+.header--nav ul li a {
   color: black;
   text-decoration: none;
   text-align: right;
+}
+.header--nav ul li:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+.header--nav ul li::before {
+  content: "";
+  width: 100%;
+  height: 0.1rem;
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 300ms ease-in-out;
+}
+@media screen and (min-width: 768px) {
+  .header--nav ul {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+.header--navOn {
+  z-index: 1;
+  opacity: 1;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 90%;
   transition: all 300ms ease-in-out;
 }
 
-.header--navOn ul li a:hover {
-  text-decoration: underline;
-}
-
 .main {
+  position: relative;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -127,19 +162,31 @@ body {
 }
 
 .hero {
-  max-width: 70rem;
-  width: 75%;
-  margin: 4rem auto;
+  position: relative;
+  max-width: 90rem;
+  width: 80%;
+  margin: 15rem auto;
+  padding-top: 5rem;
   display: flex;
   justify-content: space-around;
   flex-direction: row;
   align-items: center;
 }
-
+@media screen and (min-width: 768px) {
+  .hero {
+    margin: 20rem auto;
+    width: 90%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .hero {
+    margin: 0 auto;
+    height: 100vh;
+  }
+}
 .hero--picture {
   display: none;
 }
-
 @media screen and (min-width: 768px) {
   .hero--picture {
     display: block;
@@ -150,31 +197,32 @@ body {
     height: 20rem;
   }
 }
-
+@media screen and (min-width: 1024px) {
+  .hero--picture {
+    width: 25rem;
+    height: 25rem;
+  }
+}
 .hero--content {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
   align-items: flex-start;
 }
-
 .hero--content__title {
   font-family: "Storybook", cursive;
-  font-size: 3rem;
+  font-size: 4rem;
   line-height: 4rem;
 }
-
 .hero--content__subtitle {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   text-transform: uppercase;
   font-weight: 700;
 }
-
 .hero--content__text {
   max-width: 30rem;
   margin: 1rem 0;
 }
-
 .hero--content__link {
   display: flex;
   justify-content: space-between;
@@ -182,7 +230,6 @@ body {
   align-items: center;
   width: 12rem;
 }
-
 .hero--content__link a {
   font-family: "Social Media Circled";
   font-size: 3rem;
@@ -190,62 +237,70 @@ body {
   color: black;
   transition: all 200ms ease-in-out;
 }
-
 .hero--content__link a:hover {
   color: lightpink;
 }
 
 .slider {
   position: relative;
-  margin: 2rem auto;
-  width: 80%;
-  max-width: 70rem;
-  height: 38rem;
+  margin: 2.5rem auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
+  width: 90%;
+  max-width: 95rem;
 }
-
+@media screen and (min-width: 1024px) {
+  .slider {
+    height: 100vh;
+  }
+}
 .slider--btn {
-  width: 100%;
+  width: 75%;
   padding: 2rem;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
   align-items: center;
 }
-
 .slider--btn__next, .slider--btn__previous {
   width: 5rem;
   cursor: pointer;
   transition: all 200ms ease-in-out;
 }
-
-.slider--btn__next:hover {
-  transform: translateX(3rem);
+@media screen and (min-width: 768px) {
+  .slider--btn__next:hover {
+    transform: translateX(3rem);
+  }
+  .slider--btn__previous:hover {
+    transform: translateX(-3rem);
+  }
 }
-
-.slider--btn__previous:hover {
-  transform: translateX(-3rem);
+@media screen and (min-width: 1024px) {
+  .slider--btn {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 }
 
 .item {
   display: none;
+  width: 80%;
+  max-width: 70rem;
 }
-
 .item--title {
-  font-family: 'Storybook', cursive;
+  font-family: "Storybook", cursive;
   margin-bottom: 3rem;
   font-size: 2rem;
 }
-
 .item--text {
   line-height: 2rem;
   font-weight: 400;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
 }
-
 .item--text strong {
   font-weight: 600;
 }
@@ -265,4 +320,29 @@ body {
     opacity: 1;
   }
 }
-/*# sourceMappingURL=main.css.map */
+.scroll {
+  display: none;
+  position: absolute;
+  cursor: pointer;
+  width: 10rem;
+  height: 10rem;
+  animation: jump 1.5s infinite;
+}
+@media screen and (min-width: 1024px) {
+  .scroll {
+    display: block;
+    bottom: 10%;
+  }
+}
+
+@keyframes jump {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(10rem);
+  }
+  60% {
+    transform: translateY(-2rem);
+  }
+}/*# sourceMappingURL=main.css.map */

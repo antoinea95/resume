@@ -1,0 +1,29 @@
+.scroll {
+        display: none;
+        position: absolute;
+        cursor: pointer;
+        width: 10rem;
+        height: 10rem;
+        animation: jump 1.5s infinite;
+
+        @include desktopScreen {
+            display: block;
+            bottom: 10%;
+        }
+    }
+
+
+
+@keyframes jump {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    20% {
+        transform: translateY(10rem);
+    }
+
+    60% {
+        transform: translateY(-2rem);
+    }
+}

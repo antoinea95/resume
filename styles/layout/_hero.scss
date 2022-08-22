@@ -1,11 +1,24 @@
 .hero {
-    max-width: 70rem;
-    width: 75%;
-    margin: 4rem auto;
+    position: relative;
+    max-width: 90rem;
+    width: 80%;
+    margin: 15rem auto;
+    padding-top: 5rem;
     @include flex(space-around, center, row);
+
+    @include tabletScreen {
+      margin: 20rem auto;
+      width: 90%;
+    }
+
+    @include desktopScreen {
+      margin: 0 auto;
+      height: 100vh;
+    }
 
   &--picture {
     display: none;
+    
     @include tabletScreen {
         display: block;
         overflow: hidden;
@@ -13,6 +26,11 @@
         border: 0.2rem solid black;
         width: 20rem;
         height: 20rem;
+    }
+
+    @include desktopScreen {
+      width: 25rem;
+      height: 25rem;
     }
  
   }
@@ -23,12 +41,12 @@
 
     &__title {
         font-family: "Storybook", cursive;
-        font-size: 3rem;
+        font-size: 4rem;
         line-height: 4rem;
       }
     
       &__subtitle {
-        font-size: 1.5rem;
+        font-size: 1.7rem;
         text-transform: uppercase;
         font-weight: 700;
       }
