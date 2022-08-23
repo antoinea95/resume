@@ -52,8 +52,43 @@ function previousSlide() {
 previous.addEventListener('click', previousSlide);
 
 
+const allToggle = document.querySelectorAll('.projects--item__toggle');
+
+function showProject() {
+    const content = document.querySelectorAll('.projects--item__content');
+    const contentOn = document.querySelector('.projects--item__contentOn');
+
+    console.log(content)
+   
+
+}
+
+for(let i= 0; i < allToggle.length; i++) {
+    let show = false;
+    allToggle[i].addEventListener('click', () => {
+        
+       const content = document.querySelectorAll('.projects--item__content');
+       const contentOn = document.querySelector('.projects--item__contentOn');
+
+        content[i].classList.toggle('projects--item__contentOn');
+        allToggle[i].innerHTML = '<i class="fa-solid fa-minus"></i>';
+
+        console.log(content[i].classList)
+
+        if(content[i].classList.value === ('projects--item__content')) {
+            allToggle[i].innerHTML = '<i class="fa-solid fa-plus"></i>';
+        }
+       
+        
+    
 
 
+    })
+}
+
+
+//projectToggle.innerHTML = ' <i class="fa-solid fa-plus"></i>'
+//projectToggle.innerHTML = '';
 
 
 

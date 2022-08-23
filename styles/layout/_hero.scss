@@ -40,7 +40,6 @@
     @include flex(space-between, flex-start, column);
 
     &__title {
-        font-family: "Storybook", cursive;
         font-size: 4rem;
         line-height: 4rem;
       }

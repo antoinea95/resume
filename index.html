@@ -25,7 +25,7 @@
         <nav class="header--nav">
             <ul>
                 <li><a href="#presentation"> Présentation </a></li>
-                <li><a href="/projects.html">Projets</a></li>
+                <li><a href="#projects">Projets</a></li>
                 <li><a href="/passions/html">Passions</a></li>
                 <li><a href="/contact.html">Contact</a></li>
             </ul>
@@ -56,9 +56,9 @@
 
         </article>
 
-        <div class="slider">
+        <div class="slider" id="presentation">
 
-            <article class="item active" id="presentation">
+            <article class="item active">
                 <h2 class="item--title">Présentation</h2>
                 <p class="item--text"> 
                     Après avoir travaillé dans le commerce de détail, tenter l’aventure entrepreneuriale. 
@@ -110,15 +110,256 @@
         </div>
 
         <article id="projects">
-            <h2 class="projects--title">Mes projets Web</h2>
-            <div class="projects--grid">
-                <section class="projects--grid__item">
-                    
-                </section>
+            <div class="projects--intro">
+            <h2 class="projects--intro__title">Mes projets Web</h2>
+            <p class="projects--intro__text">
+                Durant ma formation Openclassrooms, j'ai du réaliser 6 projets web tirés de cas concrets
+                d'entreprises. 
+            </p>
             </div>
+            <div class="projects--grid">
+                <section class="projects--item">
+                    <img src="./images/screen_booki.png" class="projects--item__img" alt="screen de booki">
+                    <div class="projects--item__container">
+                        <div class="projects--item__title"> 
+                            <h3>Booki</h3>
+                            <a href="https://github.com/antoinea95/p2booki" target="_blank"> <i class="fa-brands fa-github"></i> </a>
+                            <a href="https://antoinea95.github.io/p2booki/" target="_blank"> <i class="fa-solid fa-earth-africa"></i> </a>
+                        </div>
+                        <div class="projects--item__toggle">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                        <div class="projects--item__content">
+
+                            <p>Pitch: J'ai été contacté par Booki, site de réservations d'hébergements pour intégrer la maquette 
+                            du site Booki. <br> J'avais différents critères à respecter :
+                            </p>
+                            <ul>
+                                <li> - Utiliser seulement du <strong>HTML & CSS</strong> </li>
+                                <li> - Intégrer des animations au survol de la souris (nav bar, filtres, cartes)</li>
+                                <li> - Rendre le site web <strong>responsive</strong> (maquette mobile fournie)</li>
+                            </ul>
+                        
+                            <div class="projects--item__skills">
+                                <h4> Stack technique </h4>
+                                <i class="fa-brands fa-html5"></i>
+                                <i class="fa-brands fa-css3-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            
+
+            
+                <section class="projects--item">
+                    <img src="./images/screen_omf2.png" class="projects--item__img" alt="screen de ohmyfood">
+                    <div class="projects--item__container">
+                        <div class="projects--item__title"> 
+                            <h3>Ohmyfood</h3>
+                            <a href="https://github.com/antoinea95/p3ohmyfood" target="_blank"> <i class="fa-brands fa-github"></i> </a>
+                            <a href="https://antoinea95.github.io/p3ohmyfood/" target="_blank"> <i class="fa-solid fa-earth-africa"></i> </a>
+                        </div>
+                        <div class="projects--item__toggle">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                        <div class="projects--item__content">
+
+                            <p>Pitch: Ohmyfood m'a contacté pour intégrer la maquette de leur site. Le site est développé en mobile-first. 
+                            Je devais intégrer plusieurs <strong>animations CSS</strong> dans le projet :  </p>
+                            <br>
+                            <ul>
+                                <li> - Un loading spinner temporaire (partie la plus créative car je n'avais pas de modèle fourni) </li>
+                                <li> - Le remplissage des boutons like lorsque l'utilisateur ajoute un restaurant en favori</li>
+                                <li> - Une animation lorsque la page des menus est chargée </li>
+                                <li> - Une animation lorsque l'utilisateur sélectionne un plat </li>
+                            </ul>
+                            <br>
+                             <p>
+                                Durant ce projet, je devais me servir de SAAS et versionner mon code via git puis héberger mon 
+                                dépot sur GitHub
+                            </p>
+                           
+                        
+                            <div class="projects--item__skills">
+                                <h4> Stack technique </h4>
+                                <i class="fa-brands fa-html5"></i>
+                                <i class="fa-brands fa-css3-alt"></i>
+                                <i class="fa-brands fa-sass"></i>
+                                <i class="fa-brands fa-github"></i>
+                            </div>
+                        </div>
+                </section>
+
+                <section class="projects--item">
+                    <img src="./images/screen_lapanthere.png" class="projects--item__img" alt="screen de la panthère">
+                    <div class="projects--item__container">
+                        <div class="projects--item__title"> 
+                            <h3>La panthère</h3>
+                            <a href="https://github.com/antoinea95/p4lapanthere'" target="_blank"> <i class="fa-brands fa-github"></i> </a>
+                            <a href="https://antoinea95.github.io/p4lapanthere/" target="_blank"> <i class="fa-solid fa-earth-africa"></i> </a>
+                        </div>
+                        <div class="projects--item__toggle">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                        <div class="projects--item__content">
+                            <p> 
+                                Pitch: l'agence de web la Panthère m'a contacté pour améliorer leur site web sur différents axes :
+                            </p> <br>
+
+                            <ul>
+                                <li> - optimisation du <strong>SEO</strong> </li>
+                                <li> - amélioration de <strong>'accessibilité</strong> </li>
+                                <li> - augmentation de la <strong>bonne performance</strong></li>
+                            </ul>
+                            <br>
+                             <p>Enfin, je devais <strong>auditer</strong>le site et créer un rapport qui listait tous les problèmes ciblés. 
+                                Après avoir implémenté certaines de mes recommandations, je devais établir un <strong> rapport d'optimisation</strong>
+                                pour montrer les améliorations obtenues.
+                            </p>
+                           
+                        
+                            <div class="projects--item__skills">
+                                <h4> Stack technique </h4>
+                                <i class="fa-brands fa-html5"></i>
+                                <i class="fa-solid fa-universal-access"></i>
+                                <i class="fa-brands fa-searchengin"></i>
+                                <i class="fa-solid fa-gauge-high"></i>
+                            </div>
+                        </div>
+                </section>
+
+                <section class="projects--item">
+                    <img src="./images/screen_kanap.png" class="projects--item__img" alt="screen Kanap">
+                    <div class="projects--item__container">
+                        <div class="projects--item__title"> 
+                            <h3>Kanap</h3>
+                            <a href="https://github.com/antoinea95/p5kanap" target="_blank"> <i class="fa-brands fa-github"></i> </a>
+                        </div>
+                        <div class="projects--item__toggle">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                        <div class="projects--item__content">
+
+                            
+
+
+                            <p> 
+                                Pitch : Contacté par Kanap, ma mission était d'implémenter de manière dynamique les données de l'API sur les différentes pages du site Kanap. 
+                                Le backend et frontend du projet ont déjà été réalisé Je devais rendre le tout fonctionnel grâce au <strong>JavaScript (vanilla)</strong>. Une fois le projet réalisé, 
+                                je devais rédiger <strong>un plan de test fonctionnel côté utilisateur</strong> . Voici ce que j'ai intégré au site internet : 
+                            </p> <br>
+
+                            <ul>
+                                <li> - Affichage des produits sur la page d'accueil </li>
+                                <li> 
+                                    - Affichage de la page du produit cliqué, l'utilisateur peut choisir 
+                                    une couleur et une quantité et ajouter le produit à son panier.
+                                </li>
+                                <li> - Le nombre total d'articles présents dans le panier apparaît à côté du lien panier </li>
+                                <li> 
+                                    - Sur la page panier, l'utilisateur accède à la liste des produits ajoutés précédemment, 
+                                    il peut modifier la quantité et supprimer un produit du panier. Le total du nombre d'articles 
+                                    et le prix se mettent à jour de façon dynamique
+                                </li>
+                                <li> 
+                                    - L'utilisateur doit remplir un formulaire avant de pouvoir commander, chaque champ affiche 
+                                    un message d'erreur ou de validation en fonction de la saisie effectuée par l'utilisateur.
+                                </li>
+                                <li>
+                                    - Une fois le formulaire rempli de façon valide, l'utilisateur sera redirigé vers une page de 
+                                    confirmation où un numéro de commande apparaîtra
+                                </li>
+                            </ul>
+                           
+                        
+                            <div class="projects--item__skills">
+                                <h4> Stack technique </h4>
+                                <i class="fa-brands fa-js"></i>
+                            </div>
+                        </div>
+                </section>
+
+                <section class="projects--item">
+                    <img src="./images/screen_hottakes.png" class="projects--item__img" alt="screen de Hot takes">
+                    <div class="projects--item__container">
+                        <div class="projects--item__title"> 
+                            <h3>Hot Takes</h3>
+                            <a href="https://github.com/antoinea95/p6piiquante" target="_blank"> <i class="fa-brands fa-github"></i> </a>
+                        </div>
+                        <div class="projects--item__toggle">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                        <div class="projects--item__content">
+                            <p> 
+                                Pitch : J'ai été contacté par piiquante pour construire <strong>l'API de leur application web</strong>. Le site est une « galerie de sauces » 
+                                permettant aux utilisateurs de télécharger leurs sauces piquantes préférées et de liker ou disliker les sauces que d'autres partagent. 
+                                Je devais intégrer plusieurs fonctionnalité à se projet: 
+                            </p> <br>
+
+                            <ul>
+                                <li> - L'utilisateur peut <strong>créer un compte et se connecter</strong></li>
+                                <li> - L'utilisateur peut <strong>ajouter, modifier et supprimer </strong> des sauces piquantes </li>
+                                <li> - L'utilisateur peut <strong>ajouter une photo (fichier entrant) </strong> de la sauce</li>
+                                <li> - Les données sont stockées à l'aide de <strong>MongoDB</strong></li>
+                                <li> - <strong>L'API doit être sécurisée</strong> (Hash et cryptage des données, requêtes authentifiées)</li>
+                            </ul>
+                           
+                            <div class="projects--item__skills">
+                                <h4> Stack technique </h4>
+                                <i class="fa-brands fa-node-js"></i>
+                                <img class="projects--item__skillsLogo"src="./images/mongodb_logo.png" alt="logo de mongodb">
+                                <img class="projects--item__skillsLogo "src="./images/express_logo.png" alt="logo express">
+                            </div>
+                        </div>
+                </section>
+
+                <section class="projects--item">
+                    <video controls src="./images/démo_p7.mov" class="projects--item__img" alt="video de groupomania"></video>
+                    <div class="projects--item__container">
+                        <div class="projects--item__title"> 
+                            <h3>Groupomania</h3>
+                            <a href="https://github.com/antoinea95/p7groupomania'" target="_blank"> <i class="fa-brands fa-github"></i> </a>
+                        </div>
+                        <div class="projects--item__toggle">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                        <div class="projects--item__content">
+
+                            
+
+
+
+
+
+
+
+                            <p> 
+                                Pitch: Développeur dans une agence Web, je devais réaliser <strong>un réseau social d'entreprise</strong>
+                                Pour réaliser se projet full stack, j'ai utilisé la stack MERN. Voici les fonctionnalités demandées :
+                            </p> <br>
+
+                            <ul>
+                                <li> - Une page d'accueil où les posts des utilisateurs sont affichés dans l'ordre antéchronologique</li>
+                                <li> - L'utilisateur doit pouvoir créer un post avec un image, le supprimer et le modifier </li>
+                                <li> - L'utilisateur doit pouvoir liker les posts des autres utilisateurs</li>
+                                <li> - L'utilisateur peut modifier son profil (photo, informations) et supprimer son compte</li>
+                                <li> - Un utilisateur admin pourra modifier/supprimer les posts des utilisateurs</li>
+                            </ul>
+                           
+                            <div class="projects--item__skills">
+                                <h4> Stack technique </h4>
+                                <i class="fa-brands fa-react"></i>
+                                <i class="fa-brands fa-node-js"></i>
+                                <img class="projects--item__skillsLogo"src="./images/mongodb_logo.png" alt="logo de mongodb">
+                                <img class="projects--item__skillsLogo "src="./images/express_logo.png" alt="logo express">
+                            </div>
+                        </div>
+                </section>
+
+            </div>
+            
         </article>
     </main>
-
 <script src="./js/index.js"></script>
 </body>
 

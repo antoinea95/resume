@@ -57,6 +57,15 @@ body {
   font-size: 1.5rem;
 }
 
+h1, h2 {
+  font-family: "Storybook", cursive;
+}
+
+h3, h4 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+}
+
 .header {
   z-index: 1;
   position: fixed;
@@ -210,7 +219,6 @@ body {
   align-items: flex-start;
 }
 .hero--content__title {
-  font-family: "Storybook", cursive;
   font-size: 4rem;
   line-height: 4rem;
 }
@@ -241,6 +249,32 @@ body {
   color: lightpink;
 }
 
+.scroll {
+  display: none;
+  position: absolute;
+  cursor: pointer;
+  width: 10rem;
+  height: 10rem;
+  animation: jump 1.5s infinite;
+}
+@media screen and (min-width: 1024px) {
+  .scroll {
+    display: block;
+    bottom: 10%;
+  }
+}
+
+@keyframes jump {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(10rem);
+  }
+  60% {
+    transform: translateY(-2rem);
+  }
+}
 .slider {
   position: relative;
   margin: 2.5rem auto;
@@ -292,7 +326,6 @@ body {
   max-width: 70rem;
 }
 .item--title {
-  font-family: "Storybook", cursive;
   margin-bottom: 3rem;
   font-size: 2rem;
 }
@@ -320,29 +353,126 @@ body {
     opacity: 1;
   }
 }
-.scroll {
-  display: none;
-  position: absolute;
-  cursor: pointer;
-  width: 10rem;
-  height: 10rem;
-  animation: jump 1.5s infinite;
+#projects {
+  margin: 15rem auto;
+  width: 90%;
 }
 @media screen and (min-width: 1024px) {
-  .scroll {
-    display: block;
-    bottom: 10%;
+  #projects {
+    height: 100vh;
   }
 }
 
-@keyframes jump {
-  0%, 100% {
+@media screen and (min-width: 768px) {
+  .projects--grid {
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 1024px) {
+  .projects--grid {
+    grid-template-rows: repeat(2, auto);
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.projects--intro__title {
+  font-size: 2rem;
+}
+.projects--intro__intro {
+  margin-bottom: 3rem;
+}
+
+.projects--item {
+  grid-auto-rows: auto;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  margin: 5rem 2rem;
+}
+.projects--item__img {
+  border: 0.1rem solid black;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .projects--item__img {
+    width: 40rem;
+    height: 20rem;
+  }
+}
+.projects--item__title {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+}
+.projects--item__title h3 {
+  font-size: 2rem;
+  line-height: 5rem;
+  margin-right: 1rem;
+}
+.projects--item__title a {
+  text-decoration: none;
+  color: black;
+  font-size: 2rem;
+  margin-right: 0.3rem;
+  transition: all 300ms ease-in-out;
+}
+.projects--item__title a:hover {
+  color: lightpink;
+}
+.projects--item__toggle {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  font-size: 2rem;
+  cursor: pointer;
+}
+.projects--item__toggle i {
+  transition: all 300ms ease-in-out;
+}
+.projects--item__toggle i:hover {
+  transform: rotate(360deg);
+}
+.projects--item__content {
+  display: none;
+  margin-bottom: 2rem;
+}
+@keyframes show {
+  from {
+    transform: translateY(-10rem);
+    opacity: 0;
+  }
+  to {
     transform: translateY(0);
+    opacity: 1;
   }
-  20% {
-    transform: translateY(10rem);
-  }
-  60% {
-    transform: translateY(-2rem);
-  }
+}
+.projects--item__contentOn {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  display: block;
+  animation: show 200ms;
+  width: 90%;
+}
+.projects--item__skills {
+  width: 100%;
+}
+.projects--item__skills h4 {
+  font-size: 2rem;
+  line-height: 5rem;
+}
+.projects--item__skills i {
+  font-size: 3rem;
+  margin-right: 1rem;
+}
+.projects--item__skillsLogo {
+  width: 10rem;
 }/*# sourceMappingURL=main.css.map */
