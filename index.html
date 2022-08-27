@@ -5,23 +5,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- description -->
     <meta name="description"
         content="Moi c'est Antoine, développeur web junior. De part ma passion pour le graphisme, j'ai une apétence pour le développement front-end.
     suite à ma formation chez Openclassrooms, je suis à la recherche d'opportunités pour continuer d'apprendre et ainsi consolider mes compétences.">
+
+    <!-- import du style  -->
     <link rel="stylesheet" href="/styles/main.css">
-    <title>Antoine Amoroso - Développeur web front-end</title>
+
+    <!-- fontawesome  -->
     <script src="https://kit.fontawesome.com/c8c62b8630.js" crossorigin="anonymous"></script>
+
+    <!-- title & favicon  -->
+    <title>Antoine Amoroso - Développeur web front-end</title>
+    
 </head>
 
 <body>
 
     <header class="header">
+        <!-- Logo du site -->
         <div class="header--logo">
-           <a href="#home"><img src="./images/logo.svg" alt="logo"></a> 
+            <a href="#home"><img src="./images/logo.svg" alt="logo"></a>
         </div>
+        <!-- Nav toggle  -->
         <div class="header--burger">
             <i class="fa-solid fa-bars"></i>
         </div>
+        <!-- Nav content -->
         <nav class="header--nav">
             <ul>
                 <li><a href="#presentation"> Présentation </a></li>
@@ -31,7 +43,9 @@
             </ul>
         </nav>
     </header>
+
     <main class="main" id="home">
+        <!-- Hero banner -->
         <article class="hero">
             <div class="hero--picture">
                 <img src="./images/profile_picture.png" alt="Photo de Antoine">
@@ -39,87 +53,93 @@
             <div class="hero--content">
                 <h1 class="hero--content__title">Antoine Amoroso</h1>
                 <h2 class="hero--content__subtitle"> Développeur front-end</h2>
-                <p class="hero--content__text"> 
+                <p class="hero--content__text">
                     Moi c'est Antoine, j'ai 26ans et après diverses expériences, j'ai fais le choix
                     de devenir développeur web. Passionné par le web et le graphisme, j'adore relever des challenges !
                 </p>
                 <div class="hero--content__link">
-                <a href="https://www.linkedin.com/in/antoine-amoroso-developpeur-web/" target="_blank" aria-label="lien linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href="https://github.com/antoinea95" target="_blank" aria-label="lien github"><i class="fa-brands fa-github"></i></a>
-                <a href="https://www.behance.net/antoinea95" aria-label="lien vers behance" target="_blank"><i class="fa-brands fa-behance"></i></a> 
-                <a href="mailto:antoineamr95@gmail.com" aria-label="envoyer un mail"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="https://www.linkedin.com/in/antoine-amoroso-developpeur-web/" target="_blank" aria-label="lien linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://github.com/antoinea95" target="_blank" aria-label="lien github"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.behance.net/antoinea95" aria-label="lien vers behance" target="_blank"><i class="fa-brands fa-behance"></i></a>
+                    <a href="mailto:antoineamr95@gmail.com" aria-label="envoyer un mail"><i class="fa-solid fa-envelope"></i></a>
+                </div>
             </div>
-            </div>   
-
             <div class="scroll">
                 <a class="scroll--arrow" href="#presentation"><img src="./images/scroll.svg" alt="flèche pour scroller"></a>
             </div>
-
         </article>
 
+        <!-- Slider -->
         <div class="slider" id="presentation">
             <article class="item active">
                 <h2 class="item--title">Présentation</h2>
-                <p class="item--text"> 
-                    Après avoir travaillé dans le commerce de détail, tenter l’aventure entrepreneuriale, appris le graphisme en <strong>autodidacte</strong>. 
-                    J’avais besoin d’un nouveau projet professionnel et j'ai découvert <strong>le développement web</strong>, je me suis directement
+                <p class="item--text">
+                    Après avoir travaillé dans le commerce de détail, tenter l’aventure entrepreneuriale, appris le
+                    graphisme en <strong>autodidacte</strong>.
+                    J’avais besoin d’un nouveau projet professionnel et j'ai découvert <strong>le développement
+                        web</strong>, je me suis directement
                     pris de <strong>passion</strong> pour ce métier. <br><br>
-                    Il réunit la créativité que je trouvais dans le graphisme mais aussi la curiosité qui m’habite depuis que 
-                    je suis enfant : <strong>chercher, se creuser la tête, apprendre en continu</strong> sont des caractéristiques essentielles 
-                    pour moi et me permettent de m’épanouir totalement. 
+                    Il réunit la créativité que je trouvais dans le graphisme mais aussi la curiosité qui m’habite
+                    depuis que
+                    je suis enfant : <strong>chercher, se creuser la tête, apprendre en continu</strong> sont des
+                    caractéristiques essentielles
+                    pour moi et me permettent de m’épanouir totalement.
                 </p>
             </article>
 
             <article class="item">
                 <h2 class="item--title"> Mes compétences</h2>
-                <div class="item--content"> 
-                        <div class="item--content__hardSkills">
-                            <p>Front-end</p>
-                            <i class="fa-brands fa-html5" aria-label="HTML5"></i>
-                            <i class="fa-brands fa-css3-alt" aria-label="CSS3"></i>
-                            <i class="fa-brands fa-sass"aria-label="Saas"></i>
-                            <i class="fa-brands fa-js" aria-label="javascript"></i>
-                            <i class="fa-brands fa-react" aria-label="react"></i>
-                            
-
-                            <p>Back-end</p>
-                            <i class="fa-brands fa-node-js" aria-label="node.js"></i>
-                            <img class="projects--item__skillsLogo"src="./images/mongodb_logo.png" alt="logo de mongodb">
-                            <img class="projects--item__skillsLogo "src="./images/express_logo.png" alt="logo express">
-                        </div>  
-                        <div class="item--content__softSkills">
-                            <p><i class="fa-solid fa-palette"></i> Créativité</p>
-                            <p><i class="fa-solid fa-people-group"></i> Altruisme</p>
-                            <p><i class="fa-solid fa-battery-full"></i> Autonomie </p>
-                            <p><i class="fa-solid fa-stopwatch"></i> Rigueur</p>
-                        </div>
+                <div class="item--content">
+                    <div class="item--content__hardSkills">
+                        <p>Front-end</p>
+                        <i class="fa-brands fa-html5" aria-label="HTML5"></i>
+                        <i class="fa-brands fa-css3-alt" aria-label="CSS3"></i>
+                        <i class="fa-brands fa-sass" aria-label="Saas"></i>
+                        <i class="fa-brands fa-js" aria-label="javascript"></i>
+                        <i class="fa-brands fa-react" aria-label="react"></i>
+                        <p>Back-end</p>
+                        <i class="fa-brands fa-node-js" aria-label="node.js"></i>
+                        <img class="projects--item__skillsLogo" src="./images/mongodb_logo.png" alt="logo de mongodb">
+                        <img class="projects--item__skillsLogo " src="./images/express_logo.png" alt="logo express">
+                    </div>
+                    <div class="item--content__softSkills">
+                        <p><i class="fa-solid fa-palette"></i> Créativité</p>
+                        <p><i class="fa-solid fa-people-group"></i> Altruisme</p>
+                        <p><i class="fa-solid fa-battery-full"></i> Autonomie </p>
+                        <p><i class="fa-solid fa-stopwatch"></i> Rigueur</p>
+                    </div>
                 </div>
             </article>
 
             <article class="item">
                 <h2 class="item--title">Ma formation</h2>
-                <p class="item--text"> 
+                <p class="item--text">
 
-                    J’ai décidé d’effectuer une formation chez Openclassrooms. Le grand avantage de cette formation pour moi est 
-                    <strong>l'autonomie</strong> auquel on doit faire face dans la réalisations de nos projets. 
+                    J’ai décidé d’effectuer une formation chez Openclassrooms. Le grand avantage de cette formation pour
+                    moi est
+                    <strong>l'autonomie</strong> auquel on doit faire face dans la réalisations de nos projets.
                     <br><br>
-                    Elle permet de renforcer <strong>la capacité d’apprentissage </strong> de l’étudiant mais aussi sa <strong>capacité d’adaptation</strong> lorsque 
-                    l’on se retrouve bloqué face à un problème, il faut réussir à trouver les ressources pour réussir, que ce soit via une recherche google ou en collaborant 
+                    Elle permet de renforcer <strong>la capacité d’apprentissage </strong> de l’étudiant mais aussi sa
+                    <strong>capacité d’adaptation</strong> lorsque
+                    l’on se retrouve bloqué face à un problème, il faut réussir à trouver les ressources pour réussir,
+                    que ce soit via une recherche google ou en collaborant
                     avec d’autres étudiants de la formation.
                 </p>
             </article>
 
             <article class="item">
                 <h2 class="item--title">L'alternance</h2>
-                <p class="item--text"> 
-
-                    Aujourd’hui, j’ai décidé de continuer l’aventure avec Openclassrooms en effectuant une nouvelle <strong>formation en alternance</strong>.
-                     En effet, je suis conscient que les compétences acquises lors de ma première formation constituent les fondations et 
-                     qu’il me reste beaucoup de chemin à parcourir. 
-                     <br><br>
-                     C’est pourquoi, l’alternance est la meilleure option pour moi, 
-                     je pourrais continuer de <strong>consolider mes connaissances</strong> et mettre un pied dans le monde professionnel, apprendre des 
-                     développeurs expérimentés, <strong>travailler en collaboration au sein d’une équipe.</strong>
+                <p class="item--text">
+                    Aujourd’hui, j’ai décidé de continuer l’aventure avec Openclassrooms en effectuant une nouvelle
+                    <strong>formation en alternance</strong>.
+                    En effet, je suis conscient que les compétences acquises lors de ma première formation constituent
+                    les fondations et
+                    qu’il me reste beaucoup de chemin à parcourir.
+                    <br><br>
+                    C’est pourquoi, l’alternance est la meilleure option pour moi,
+                    je pourrais continuer de <strong>consolider mes connaissances</strong> et mettre un pied dans le
+                    monde professionnel, apprendre des
+                    développeurs expérimentés, <strong>travailler en collaboration au sein d’une équipe.</strong>
                 </p>
             </article>
 
@@ -133,30 +153,33 @@
             </div>
         </div>
 
+        <!-- project part -->
         <article id="projects">
             <div class="projects--intro">
-            <h2 class="projects--intro__title">Mes projets Web</h2>
-            <p class="projects--intro__text">
-                Durant ma formation Openclassrooms, j'ai du réaliser 6 projets web tirés de cas concrets
-                d'entreprises. 
-            </p>
+                <h2 class="projects--intro__title">Mes projets Web</h2>
+                <p class="projects--intro__text">
+                    Durant ma formation Openclassrooms, j'ai du réaliser 6 projets web tirés de cas concrets
+                    d'entreprises.
+                </p>
             </div>
             <div class="projects--grid">
                 <section class="projects--item">
                     <img src="./images/screen_booki.png" class="projects--item__img" alt="screen de booki">
                     <div class="projects--item__container">
-                        <div class="projects--item__title"> 
+                        <div class="projects--item__title">
                             <h3>Booki</h3>
-                            <a href="https://github.com/antoinea95/p2booki" target="_blank"> <i class="fa-brands fa-github"></i> </a>
-                            <a href="https://antoinea95.github.io/p2booki/" target="_blank"> <i class="fa-solid fa-earth-africa"></i> </a>
+                            <a href="https://github.com/antoinea95/p2booki" target="_blank"> <i
+                                    class="fa-brands fa-github"></i> </a>
+                            <a href="https://antoinea95.github.io/p2booki/" target="_blank"> <i
+                                    class="fa-solid fa-earth-africa"></i> </a>
                         </div>
                         <div class="projects--item__toggle">
                             <i class="fa-solid fa-plus"></i>
                         </div>
                         <div class="projects--item__content">
-
-                            <p>Pitch: J'ai été contacté par Booki, site de réservations d'hébergements pour intégrer la maquette 
-                            du site Booki. <br> J'avais différents critères à respecter :
+                            <p>Pitch: J'ai été contacté par Booki, site de réservations d'hébergements pour intégrer la
+                                maquette
+                                du site Booki. <br> J'avais différents critères à respecter :
                             </p>
                             <br>
                             <ul>
@@ -164,7 +187,6 @@
                                 <li> - Intégrer des animations au survol de la souris (nav bar, filtres, cartes)</li>
                                 <li> - Rendre le site web <strong>responsive</strong> (maquette mobile fournie)</li>
                             </ul>
-                        
                             <div class="projects--item__skills">
                                 <h4> Stack technique </h4>
                                 <i class="fa-brands fa-html5"></i>
@@ -173,13 +195,11 @@
                         </div>
                     </div>
                 </section>
-            
 
-            
                 <section class="projects--item">
                     <img src="./images/screen_omf.png" class="projects--item__img" alt="screen de ohmyfood">
                     <div class="projects--item__container">
-                        <div class="projects--item__title"> 
+                        <div class="projects--item__title">
                             <h3>Ohmyfood</h3>
                             <a href="https://github.com/antoinea95/p3ohmyfood" target="_blank"> <i class="fa-brands fa-github"></i> </a>
                             <a href="https://antoinea95.github.io/p3ohmyfood/" target="_blank"> <i class="fa-solid fa-earth-africa"></i> </a>
@@ -188,9 +208,9 @@
                             <i class="fa-solid fa-plus"></i>
                         </div>
                         <div class="projects--item__content">
-
-                            <p>Pitch: Ohmyfood m'a contacté pour intégrer la maquette de leur site. Le site est développé en mobile-first. 
-                            Je devais intégrer plusieurs <strong>animations CSS</strong> dans le projet :  </p>
+                            <p>Pitch: Ohmyfood m'a contacté pour intégrer la maquette de leur site. Le site est
+                                développé en mobile-first.
+                                Je devais intégrer plusieurs <strong>animations CSS</strong> dans le projet : </p>
                             <br>
                             <ul>
                                 <li> - <strong>Un loading spinner </strong> temporaire (partie la plus créative car je n'avais pas de modèle fourni) </li>
@@ -199,17 +219,17 @@
                                 <li> - Une animation lorsque l'utilisateur sélectionne un plat </li>
                             </ul>
                             <br>
-                             <p>
-                                Durant ce projet, je devais me servir de <strong>SAAS</strong> et versionner mon code via git puis héberger mon 
+                            <p>
+                                Durant ce projet, je devais me servir de <strong>SAAS</strong> et versionner mon code
+                                via git puis héberger mon
                                 dépot sur <strong>GitHub</strong>.
                             </p>
-                           
-                        
+
                             <div class="projects--item__skills">
                                 <h4> Stack technique </h4>
                                 <i class="fa-brands fa-html5" aria-label="HTML5"></i>
                                 <i class="fa-brands fa-css3-alt" aria-label="CSS3"></i>
-                                <i class="fa-brands fa-sass"aria-label="Saas"></i>
+                                <i class="fa-brands fa-sass" aria-label="Saas"></i>
                                 <i class="fa-brands fa-github" aria-label="Github"></i>
                             </div>
                         </div>
@@ -218,7 +238,7 @@
                 <section class="projects--item">
                     <img src="./images/screen_lapanthere.png" class="projects--item__img" alt="screen de la panthère">
                     <div class="projects--item__container">
-                        <div class="projects--item__title"> 
+                        <div class="projects--item__title">
                             <h3>La panthère</h3>
                             <a href="https://github.com/antoinea95/p4lapanthere'" target="_blank"> <i class="fa-brands fa-github"></i> </a>
                             <a href="https://antoinea95.github.io/p4lapanthere/" target="_blank"> <i class="fa-solid fa-earth-africa"></i> </a>
@@ -227,22 +247,24 @@
                             <i class="fa-solid fa-plus"></i>
                         </div>
                         <div class="projects--item__content">
-                            <p> 
-                                Pitch: l'agence de web la Panthère m'a contacté pour améliorer leur site web sur différents axes :
-                            </p> <br>
-
+                            <p>
+                                Pitch: l'agence de web la Panthère m'a contacté pour améliorer leur site web sur
+                                différents axes :
+                            </p> 
+                            <br>
                             <ul>
                                 <li> - optimisation du <strong>SEO</strong> </li>
                                 <li> - amélioration de <strong>'accessibilité</strong> </li>
                                 <li> - augmentation de la <strong>bonne performance</strong></li>
                             </ul>
                             <br>
-                             <p>Enfin, je devais <strong>auditer</strong>le site et créer un rapport qui listait tous les problèmes ciblés. 
-                                Après avoir implémenté certaines de mes recommandations, je devais établir un <strong> rapport d'optimisation</strong>
+                            <p>Enfin, je devais <strong>auditer</strong>le site et créer un rapport qui listait tous les
+                                problèmes ciblés.
+                                Après avoir implémenté certaines de mes recommandations, je devais établir un <strong>
+                                    rapport d'optimisation</strong>
                                 pour montrer les améliorations obtenues.
                             </p>
-                           
-                        
+
                             <div class="projects--item__skills">
                                 <h4> Stack technique </h4>
                                 <i class="fa-brands fa-html5" aria-label="HTML5"></i>
@@ -256,7 +278,7 @@
                 <section class="projects--item">
                     <img src="./images/screen_kanap.png" class="projects--item__img" alt="screen Kanap">
                     <div class="projects--item__container">
-                        <div class="projects--item__title"> 
+                        <div class="projects--item__title">
                             <h3>Kanap</h3>
                             <a href="https://github.com/antoinea95/p5kanap" target="_blank"> <i class="fa-brands fa-github"></i> </a>
                         </div>
@@ -264,33 +286,28 @@
                             <i class="fa-solid fa-plus"></i>
                         </div>
                         <div class="projects--item__content">
-
-                            
-
-
-                            <p> 
-                                Pitch : Contacté par Kanap, ma mission était d'implémenter de <strong>manière dynamique les données de l'API</strong> sur les différentes pages du site Kanap. 
-                                Le backend et frontend du projet ont déjà été réalisé Je devais rendre le tout fonctionnel grâce au <strong>JavaScript (vanilla)</strong>. 
-                                Voici ce que j'ai intégré au site internet : 
-                            </p> <br>
+                            <p>
+                                Pitch : Contacté par Kanap, ma mission était d'implémenter de <strong>manière dynamique
+                                    les données de l'API</strong> sur les différentes pages du site Kanap.
+                                Le backend et frontend du projet ont déjà été réalisé Je devais rendre le tout
+                                fonctionnel grâce au <strong>JavaScript (vanilla)</strong>.
+                                Voici ce que j'ai intégré au site internet :
+                            </p> 
+                            <br>
                             <ul>
                                 <li> - <strong>Affichage des produits</strong> sur la page d'accueil </li>
-                                <li> 
-                                    - Affichage de la page du produit cliqué, l'utilisateur peut <strong>choisir 
-                                    une couleur et une quantité et ajouter le produit à son panier</strong>.
+                                <li> - Affichage de la page du produit cliqué, l'utilisateur peut <strong>choisir 
+                                une couleur et une quantité et ajouter le produit à son panier</strong>.
                                 </li>
-                                <li> 
-                                    - Affichage des produits ajoutés au panier, <strong>modification de la quantité et supression d'un produit</strong>
+                                <li> - Affichage des produits ajoutés au panier, <strong>modification de la quantité et
+                                supression d'un produit</strong>
                                 </li>
-                                <li> 
-                                    - L'utilisateur doit remplir un <strong>formulaire</strong> avant de pouvoir commander
-                                </li>
-                                <li>
-                                    - Une fois le formulaire validé, redirection de l'utilisateur et <strong>affichage d'un numéro de commande</strong>
+                                <li> - L'utilisateur doit remplir un <strong>formulaire</strong> avant de pouvoir commander</li>
+                                <li> - Une fois le formulaire validé, redirection de l'utilisateur et <strong>affichage
+                                d'un numéro de commande</strong>
                                 </li>
                             </ul>
-                           
-                        
+
                             <div class="projects--item__skills">
                                 <h4> Stack technique </h4>
                                 <i class="fa-brands fa-js" aria-label="javascript"></i>
@@ -301,7 +318,7 @@
                 <section class="projects--item">
                     <img src="./images/screen_hottakes.png" class="projects--item__img" alt="screen de Hot takes">
                     <div class="projects--item__container">
-                        <div class="projects--item__title"> 
+                        <div class="projects--item__title">
                             <h3>Hot Takes</h3>
                             <a href="https://github.com/antoinea95/p6piiquante" target="_blank"> <i class="fa-brands fa-github"></i> </a>
                         </div>
@@ -309,10 +326,12 @@
                             <i class="fa-solid fa-plus"></i>
                         </div>
                         <div class="projects--item__content">
-                            <p> 
-                                Pitch : J'ai été contacté par piiquante pour construire <strong>l'API de leur application web</strong>. Le site est une « galerie de sauces » 
-                                permettant aux utilisateurs de télécharger leurs sauces piquantes préférées et de liker ou disliker les sauces que d'autres partagent. 
-                                Je devais intégrer plusieurs fonctionnalité à se projet: 
+                            <p>
+                                Pitch : J'ai été contacté par piiquante pour construire <strong>l'API de leur
+                                    application web</strong>. Le site est une « galerie de sauces »
+                                permettant aux utilisateurs de télécharger leurs sauces piquantes préférées et de liker
+                                ou disliker les sauces que d'autres partagent.
+                                Je devais intégrer plusieurs fonctionnalité à se projet:
                             </p> <br>
 
                             <ul>
@@ -320,22 +339,27 @@
                                 <li> - L'utilisateur peut <strong>ajouter, modifier et supprimer </strong> des sauces piquantes </li>
                                 <li> - L'utilisateur peut <strong>ajouter une photo (fichier entrant) </strong> de la sauce</li>
                                 <li> - Les données sont stockées à l'aide de <strong>MongoDB</strong></li>
-                                <li> - <strong>L'API doit être sécurisée</strong> (Hash et cryptage des données, requêtes authentifiées)</li>
+                                <li> - <strong>L'API doit être sécurisée</strong> (Hash et cryptage des données,
+                                    requêtes authentifiées)
+                                </li>
                             </ul>
-                           
+
                             <div class="projects--item__skills">
                                 <h4> Stack technique </h4>
                                 <i class="fa-brands fa-node-js" aria-label="node.js"></i>
-                                <img class="projects--item__skillsLogo"src="./images/mongodb_logo.png" alt="logo de mongodb">
-                                <img class="projects--item__skillsLogo "src="./images/express_logo.png" alt="logo express">
+                                <img class="projects--item__skillsLogo" src="./images/mongodb_logo.png"
+                                    alt="logo de mongodb">
+                                <img class="projects--item__skillsLogo " src="./images/express_logo.png"
+                                    alt="logo express">
                             </div>
                         </div>
                 </section>
 
                 <section class="projects--item">
-                    <video controls src="./images/démo_p7.mov" class="projects--item__img" alt="video de groupomania"></video>
+                    <video controls src="./images/démo_p7.mov" class="projects--item__img"
+                        alt="video de groupomania"></video>
                     <div class="projects--item__container">
-                        <div class="projects--item__title"> 
+                        <div class="projects--item__title">
                             <h3>Groupomania</h3>
                             <a href="https://github.com/antoinea95/p7groupomania'" target="_blank"> <i class="fa-brands fa-github"></i> </a>
                         </div>
@@ -343,12 +367,13 @@
                             <i class="fa-solid fa-plus"></i>
                         </div>
                         <div class="projects--item__content">
-
-                            <p> 
-                                Pitch: Développeur dans une agence Web, je devais réaliser <strong>un réseau social d'entreprise</strong>
-                                Pour réaliser se projet full stack, j'ai utilisé la <strong>stack MERN</strong>. Voici les fonctionnalités demandées :
-                            </p> <br>
-
+                            <p>
+                                Pitch: Développeur dans une agence Web, je devais réaliser <strong>un réseau social
+                                    d'entreprise</strong>
+                                Pour réaliser se projet full stack, j'ai utilisé la <strong>stack MERN</strong>. Voici
+                                les fonctionnalités demandées :
+                            </p> 
+                            <br>
                             <ul>
                                 <li> - Une page d'accueil où les posts des utilisateurs sont affichés dans l'ordre antéchronologique</li>
                                 <li> - L'utilisateur doit pouvoir <strong>créer un post avec un image, le supprimer et le modifier</strong> </li>
@@ -356,93 +381,120 @@
                                 <li> - L'utilisateur peut <strong>modifier son profil (photo, informations) et supprimer son compte</strong></li>
                                 <li> - <strong>Un utilisateur admin</strong> pourra modifier/supprimer les posts des utilisateurs</li>
                             </ul>
-                           
+
                             <div class="projects--item__skills">
                                 <h4> Stack technique </h4>
                                 <i class="fa-brands fa-react" aria-label="react"></i>
                                 <i class="fa-brands fa-node-js" aria-label="node.js"></i>
-                                <img class="projects--item__skillsLogo"src="./images/mongodb_logo.png" alt="logo de mongodb">
-                                <img class="projects--item__skillsLogo "src="./images/express_logo.png" alt="logo express">
+                                <img class="projects--item__skillsLogo" src="./images/mongodb_logo.png"
+                                    alt="logo de mongodb">
+                                <img class="projects--item__skillsLogo " src="./images/express_logo.png"
+                                    alt="logo express">
                             </div>
                         </div>
                 </section>
-
             </div>
 
             <div class="scroll scroll--projects">
-                <a class="scroll--arrow " href="#passions"><img src="./images/scroll.svg" alt="flèche pour scroller"></a>
+                <a class="scroll--arrow " href="#passions"><img src="./images/scroll.svg"
+                        alt="flèche pour scroller"></a>
             </div>
-            
         </article>
 
+        <!-- Passions part -->
         <article id="passions">
             <h2 class="passions--title"> Mes passions</h2>
+            <div class="passions--container">
+                <section class="passions--item" id="graphisme">
+                    <h3 class="passions--item__title">Le graphisme</h3>
+                    <p class="passions--item__text"> 
+                        Avant le développement, le graphisme a toujours été une passion.
+                        J'ai appris à créer des visuels en <strong>autodidacte</strong> et j'ai eu la chance de
+                        travailler sur divers projets.
+                        Cela explique mon intêret particulier pour le côté <strong>front-end</strong> : j'adore créer et
+                        allier mes compétences.
+                        <br><br>
+                        Quelques-unes de mes réalisations :
+                    </p>
+                    <div class="passions--item__img">
+                        <img src="./images/arter_shop.jpg" alt="Logo de Arter Shop">
+                        <img src="./images/mgz_101.jpg" alt="Pochette Mgz - 101 vol2">
+                        <img src="./images/Laylow.jpg" alt="Illustration de laylow">
+                    </div>
+                </section>
 
-            <div class="passions--container" >
-            <section class="passions--item" id="graphisme">
-                <h3 class="passions--item__title">Le graphisme</h3>
-                <p class="passions--item__text"> Avant le développement, le graphisme a toujours été une passion. 
-                    J'ai appris à créer des visuels en <strong>autodidacte</strong> et j'ai eu la chance de travailler sur divers projets.
-                    Cela explique mon intêret particulier pour le côté <strong>front-end</strong> : j'adore créer et allier mes compétences.
-                    <br><br>
-                    Quelques-unes de mes réalisations :
-                </p>
-                <div class="passions--item__img">
-                    <img src="./images/arter_shop.jpg" alt="Logo de Arter Shop">
-                    <img src="./images/mgz_101.jpg" alt="Pochette Mgz - 101 vol2">
-                    <img src="./images/Laylow.jpg" alt="Illustration de laylow">
-                </div>
-            </section>
+                <section class="passions--item" id="rap">
+                    <h3 class="passions--item__title">Le rap</h3>
+                    <p class="passions--item__text">
+                        J'adore écouter de la musique quand je travaille, ça permet de me <strong>concentrer</strong>,
+                        les artistes
+                        que j'écoute sont des <strong>sources d'inspirations</strong>. Le rap est une réèlle passion,
+                        écrire des textes me permet
+                        de laisser parler ma <strong>créativité</strong>. <br><br>
+                        Mes artistes favoris :
+                    </p>
+                    <div class="passions--item__img">
+                        <a href="https://open.spotify.com/track/5KTBqEFYGxYsz5WqoRPqsM?si=2bd80b9313fe46e1"
+                            target="_blank"><i class="fa-brands fa-spotify"></i><img src="./images/josman.jpeg"
+                                alt="Photo de josman">
+                        </a>
+                        <a href="https://open.spotify.com/track/5ZjEm81TYFPfE6Ddc0memq?si=7b38c8bf9bbb438a"
+                            target="_blank"><i class="fa-brands fa-spotify"></i><img src="./images/laylow.png"
+                                alt="Photo de laylow">
+                        </a>
+                        <a href="https://open.spotify.com/track/7CAoGOFte5I1unfkE69o4w?si=bd5947ba7be24fc5"
+                            target="_blank"><i class="fa-brands fa-spotify"></i><img src="./images/alphawann.jpeg"
+                                alt="Photo d'Alpha Wann">
+                        </a>
+                    </div>
+                </section>
 
-            <section class="passions--item" id="rap">
-                <h3 class="passions--item__title">Le rap</h3>
-                <p class="passions--item__text"> 
-                    J'adore écouter de la musique quand je travaille, ça permet de me <strong>concentrer</strong>, les artistes
-                    que j'écoute sont des <strong>sources d'inspirations</strong>. Le rap est une réèlle passion, écrire des textes me permet
-                    de laisser parler ma <strong>créativité</strong>. <br><br>
-                    Mes artistes favoris :
-                </p>
-                <div class="passions--item__img">
-                    <a href="https://open.spotify.com/track/5KTBqEFYGxYsz5WqoRPqsM?si=2bd80b9313fe46e1" target="_blank"><i class="fa-brands fa-spotify"></i><img src="./images/josman.jpeg" alt="Photo de josman"></a>
-                    <a href="https://open.spotify.com/track/5ZjEm81TYFPfE6Ddc0memq?si=7b38c8bf9bbb438a" target="_blank"><i class="fa-brands fa-spotify"></i><img src="./images/laylow.png" alt="Photo de laylow"></a>
-                    <a href="https://open.spotify.com/track/7CAoGOFte5I1unfkE69o4w?si=bd5947ba7be24fc5" target="_blank"><i class="fa-brands fa-spotify"></i><img src="./images/alphawann.jpeg" alt="Photo d'Alpha Wann"></a>
-                </div>
-            </section>
-
-            <section class="passions--item" id="sport">
-                <h3 class="passions--item__title">Le sport</h3>
-                <p class="passions--item__text"> 
-                   Le sport a toujours été un moyen de me défouler. Depuis petit, je suis passionné par le <strong>football</strong>, j'ai joué 
-                   en club de mon enfance jusqu'à ma majorité. Les valeurs que véhiculent les sports collectifs sont indispensables
-                   et servent dans la vie : <strong>fairplay, esprit d'équipe, inclusion, dépassement de soi</strong> etc..
-                </p>
-            </section>
-        </div>
-        <div class="scroll scroll--projects">
-            <a class="scroll--arrow " href="#contact"><img src="./images/scroll.svg" alt="flèche pour scroller"></a>
-        </div>
+                <section class="passions--item" id="sport">
+                    <h3 class="passions--item__title">Le sport</h3>
+                    <p class="passions--item__text">
+                        Le sport a toujours été un moyen de me défouler. Depuis petit, je suis passionné par le
+                        <strong>football</strong>, j'ai joué
+                        en club de mon enfance jusqu'à ma majorité. Les valeurs que véhiculent les sports collectifs
+                        sont indispensables
+                        et servent dans la vie : <strong>fairplay, esprit d'équipe, inclusion, dépassement de
+                            soi</strong> etc..
+                    </p>
+                </section>
+            </div>
+            <div class="scroll scroll--projects">
+                <a class="scroll--arrow " href="#contact"><img src="./images/scroll.svg" alt="flèche pour scroller"></a>
+            </div>
         </article>
 
+        <!-- contact part -->
         <footer id="contact">
             <div class="contact--content">
-            <h2 class="contact--content__title">Contactez-moi</h2>
-            <p class="contact--content__text"> Je reste à l'écoute de vos <strong>opportunités</strong> et <strong>projets</strong>.
-            <br>Vous pouvez me retrouver ici : 
-            </p>
-            <div class="hero--content__link">
-                <a href="https://www.linkedin.com/in/antoine-amoroso-developpeur-web/" target="_blank" aria-label="lien linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href="https://github.com/antoinea95" target="_blank" aria-label="lien github"><i class="fa-brands fa-github"></i></a>
-                <a href="https://www.behance.net/antoinea95" aria-label="lien vers behance" target="_blank"><i class="fa-brands fa-behance"></i></a> 
-                <a href="mailto:antoineamr95@gmail.com" aria-label="envoyer un mail"><i class="fa-solid fa-envelope"></i></a>
+                <h2 class="contact--content__title">Contactez-moi</h2>
+                <p class="contact--content__text"> 
+                    Je reste à l'écoute de vos <strong>opportunités</strong> et <strong>projets</strong>.
+                    <br>
+                    Vous pouvez me retrouver ici :
+                </p>
+                <div class="hero--content__link">
+                    <a href="https://www.linkedin.com/in/antoine-amoroso-developpeur-web/" target="_blank"
+                        aria-label="lien linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://github.com/antoinea95" target="_blank" aria-label="lien github"><i
+                            class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://www.behance.net/antoinea95" aria-label="lien vers behance" target="_blank"><i
+                            class="fa-brands fa-behance"></i>
+                    </a>
+                    <a href="mailto:antoineamr95@gmail.com" aria-label="envoyer un mail"><i
+                            class="fa-solid fa-envelope"></i>
+                    </a>
+                </div>
             </div>
-        </div>
-        <div class="scroll scroll--top">
-            <a class="scroll--arrow" href="#home"><img src="./images/scroll_top.svg" alt="flèche pour scroller"></a>
-        </div>
-
+            <div class="scroll scroll--top">
+                <a class="scroll--arrow" href="#home"><img src="./images/scroll_top.svg" alt="flèche pour scroller"></a>
+            </div>
         </footer>
     </main>
-<script src="./js/index.js"></script>
+    <!-- import js script -->
+    <script src="./js/index.js"></script>
 </body>
-
 </html>
