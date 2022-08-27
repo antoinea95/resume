@@ -17,7 +17,7 @@
 
     <header class="header">
         <div class="header--logo">
-            <img src="./images/logo.png" alt="logo">
+           <a href="#home"><img src="./images/logo.svg" alt="logo"></a> 
         </div>
         <div class="header--burger">
             <i class="fa-solid fa-bars"></i>
@@ -26,46 +26,44 @@
             <ul>
                 <li><a href="#presentation"> Présentation </a></li>
                 <li><a href="#projects">Projets</a></li>
-                <li><a href="/passions/html">Passions</a></li>
-                <li><a href="/contact.html">Contact</a></li>
+                <li><a href="#passions">Passions</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <main class="main">
+    <main class="main" id="home">
         <article class="hero">
             <div class="hero--picture">
                 <img src="./images/profile_picture.png" alt="Photo de Antoine">
             </div>
             <div class="hero--content">
                 <h1 class="hero--content__title">Antoine Amoroso</h1>
-                <h2 class="hero--content__subtitle"> Développeur front-end junior </h2>
+                <h2 class="hero--content__subtitle"> Développeur front-end</h2>
                 <p class="hero--content__text"> 
                     Moi c'est Antoine, j'ai 26ans et après diverses expériences, j'ai fais le choix
                     de devenir développeur web. Passionné par le web et le graphisme, j'adore relever des challenges !
                 </p>
                 <div class="hero--content__link">
-                <a href="https://www.linkedin.com/in/antoine-amoroso-developpeur-web/" target="_blank"> C </a>
-                <a href="https://github.com/antoinea95" target="_blank"> ) </a>
-                <a href="mailto:antoineamr95@gmail.com"> k </a>
-                </div>
+                <a href="https://www.linkedin.com/in/antoine-amoroso-developpeur-web/" target="_blank" aria-label="lien linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/antoinea95" target="_blank" aria-label="lien github"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.behance.net/antoinea95" aria-label="lien vers behance" target="_blank"><i class="fa-brands fa-behance"></i></a> 
+                <a href="mailto:antoineamr95@gmail.com" aria-label="envoyer un mail"><i class="fa-solid fa-envelope"></i></a>
+            </div>
             </div>   
 
             <div class="scroll">
-                <a class="scroll--arrow" href="#presentation"><img src="./images/scrool.svg" alt="flèche pour scroller"></a>
+                <a class="scroll--arrow" href="#presentation"><img src="./images/scroll.svg" alt="flèche pour scroller"></a>
             </div>
 
         </article>
 
         <div class="slider" id="presentation">
-
             <article class="item active">
                 <h2 class="item--title">Présentation</h2>
                 <p class="item--text"> 
-                    Après avoir travaillé dans le commerce de détail, tenter l’aventure entrepreneuriale. 
-                    J’avais besoin d’un nouveau projet professionnel, ayant <strong>une appétence naturelle pour l’informatique </strong>
-                    et les nouvelles technologies, j’ai appris le graphisme en <strong>autodidacte</strong>. <br><br>
-                    Puis j’ai ouvert la merveilleuse boîte de pandore qu’est le développement web. 
-                    Je me suis directement pris de <strong>passion</strong> pour le code et j’ai décidé que c’était ce métier qui me fallait. 
+                    Après avoir travaillé dans le commerce de détail, tenter l’aventure entrepreneuriale, appris le graphisme en <strong>autodidacte</strong>. 
+                    J’avais besoin d’un nouveau projet professionnel et j'ai découvert <strong>le développement web</strong>, je me suis directement
+                    pris de <strong>passion</strong> pour ce métier. <br><br>
                     Il réunit la créativité que je trouvais dans le graphisme mais aussi la curiosité qui m’habite depuis que 
                     je suis enfant : <strong>chercher, se creuser la tête, apprendre en continu</strong> sont des caractéristiques essentielles 
                     pour moi et me permettent de m’épanouir totalement. 
@@ -73,11 +71,37 @@
             </article>
 
             <article class="item">
+                <h2 class="item--title"> Mes compétences</h2>
+                <div class="item--content"> 
+                        <div class="item--content__hardSkills">
+                            <p>Front-end</p>
+                            <i class="fa-brands fa-html5" aria-label="HTML5"></i>
+                            <i class="fa-brands fa-css3-alt" aria-label="CSS3"></i>
+                            <i class="fa-brands fa-sass"aria-label="Saas"></i>
+                            <i class="fa-brands fa-js" aria-label="javascript"></i>
+                            <i class="fa-brands fa-react" aria-label="react"></i>
+                            
+
+                            <p>Back-end</p>
+                            <i class="fa-brands fa-node-js" aria-label="node.js"></i>
+                            <img class="projects--item__skillsLogo"src="./images/mongodb_logo.png" alt="logo de mongodb">
+                            <img class="projects--item__skillsLogo "src="./images/express_logo.png" alt="logo express">
+                        </div>  
+                        <div class="item--content__softSkills">
+                            <p><i class="fa-solid fa-palette"></i> Créativité</p>
+                            <p><i class="fa-solid fa-people-group"></i> Altruisme</p>
+                            <p><i class="fa-solid fa-battery-full"></i> Autonomie </p>
+                            <p><i class="fa-solid fa-stopwatch"></i> Rigueur</p>
+                        </div>
+                </div>
+            </article>
+
+            <article class="item">
                 <h2 class="item--title">Ma formation</h2>
                 <p class="item--text"> 
 
                     J’ai décidé d’effectuer une formation chez Openclassrooms. Le grand avantage de cette formation pour moi est 
-                    <strong>autonomie</strong> auquel on doit faire face dans la réalisations de nos projets. 
+                    <strong>l'autonomie</strong> auquel on doit faire face dans la réalisations de nos projets. 
                     <br><br>
                     Elle permet de renforcer <strong>la capacité d’apprentissage </strong> de l’étudiant mais aussi sa <strong>capacité d’adaptation</strong> lorsque 
                     l’on se retrouve bloqué face à un problème, il faut réussir à trouver les ressources pour réussir, que ce soit via une recherche google ou en collaborant 
@@ -91,7 +115,7 @@
 
                     Aujourd’hui, j’ai décidé de continuer l’aventure avec Openclassrooms en effectuant une nouvelle <strong>formation en alternance</strong>.
                      En effet, je suis conscient que les compétences acquises lors de ma première formation constituent les fondations et 
-                     qu’ils me restent beaucoup de chemin à parcourir. 
+                     qu’il me reste beaucoup de chemin à parcourir. 
                      <br><br>
                      C’est pourquoi, l’alternance est la meilleure option pour moi, 
                      je pourrais continuer de <strong>consolider mes connaissances</strong> et mettre un pied dans le monde professionnel, apprendre des 
@@ -105,7 +129,7 @@
             </div>
 
             <div class="scroll">
-                <a class="scroll--arrow" href="#projects"><img src="./images/scrool.svg" alt="flèche pour scroller"></a>
+                <a class="scroll--arrow" href="#projects"><img src="./images/scroll.svg" alt="flèche pour scroller"></a>
             </div>
         </div>
 
@@ -134,6 +158,7 @@
                             <p>Pitch: J'ai été contacté par Booki, site de réservations d'hébergements pour intégrer la maquette 
                             du site Booki. <br> J'avais différents critères à respecter :
                             </p>
+                            <br>
                             <ul>
                                 <li> - Utiliser seulement du <strong>HTML & CSS</strong> </li>
                                 <li> - Intégrer des animations au survol de la souris (nav bar, filtres, cartes)</li>
@@ -152,7 +177,7 @@
 
             
                 <section class="projects--item">
-                    <img src="./images/screen_omf2.png" class="projects--item__img" alt="screen de ohmyfood">
+                    <img src="./images/screen_omf.png" class="projects--item__img" alt="screen de ohmyfood">
                     <div class="projects--item__container">
                         <div class="projects--item__title"> 
                             <h3>Ohmyfood</h3>
@@ -168,24 +193,24 @@
                             Je devais intégrer plusieurs <strong>animations CSS</strong> dans le projet :  </p>
                             <br>
                             <ul>
-                                <li> - Un loading spinner temporaire (partie la plus créative car je n'avais pas de modèle fourni) </li>
+                                <li> - <strong>Un loading spinner </strong> temporaire (partie la plus créative car je n'avais pas de modèle fourni) </li>
                                 <li> - Le remplissage des boutons like lorsque l'utilisateur ajoute un restaurant en favori</li>
                                 <li> - Une animation lorsque la page des menus est chargée </li>
                                 <li> - Une animation lorsque l'utilisateur sélectionne un plat </li>
                             </ul>
                             <br>
                              <p>
-                                Durant ce projet, je devais me servir de SAAS et versionner mon code via git puis héberger mon 
-                                dépot sur GitHub
+                                Durant ce projet, je devais me servir de <strong>SAAS</strong> et versionner mon code via git puis héberger mon 
+                                dépot sur <strong>GitHub</strong>.
                             </p>
                            
                         
                             <div class="projects--item__skills">
                                 <h4> Stack technique </h4>
-                                <i class="fa-brands fa-html5"></i>
-                                <i class="fa-brands fa-css3-alt"></i>
-                                <i class="fa-brands fa-sass"></i>
-                                <i class="fa-brands fa-github"></i>
+                                <i class="fa-brands fa-html5" aria-label="HTML5"></i>
+                                <i class="fa-brands fa-css3-alt" aria-label="CSS3"></i>
+                                <i class="fa-brands fa-sass"aria-label="Saas"></i>
+                                <i class="fa-brands fa-github" aria-label="Github"></i>
                             </div>
                         </div>
                 </section>
@@ -220,10 +245,10 @@
                         
                             <div class="projects--item__skills">
                                 <h4> Stack technique </h4>
-                                <i class="fa-brands fa-html5"></i>
-                                <i class="fa-solid fa-universal-access"></i>
-                                <i class="fa-brands fa-searchengin"></i>
-                                <i class="fa-solid fa-gauge-high"></i>
+                                <i class="fa-brands fa-html5" aria-label="HTML5"></i>
+                                <i class="fa-solid fa-universal-access" aria-label="accessibilité"></i>
+                                <i class="fa-brands fa-searchengin" aria-label="SEO"></i>
+                                <i class="fa-solid fa-gauge-high" aria-label="performance"></i>
                             </div>
                         </div>
                 </section>
@@ -244,37 +269,31 @@
 
 
                             <p> 
-                                Pitch : Contacté par Kanap, ma mission était d'implémenter de manière dynamique les données de l'API sur les différentes pages du site Kanap. 
-                                Le backend et frontend du projet ont déjà été réalisé Je devais rendre le tout fonctionnel grâce au <strong>JavaScript (vanilla)</strong>. Une fois le projet réalisé, 
-                                je devais rédiger <strong>un plan de test fonctionnel côté utilisateur</strong> . Voici ce que j'ai intégré au site internet : 
+                                Pitch : Contacté par Kanap, ma mission était d'implémenter de <strong>manière dynamique les données de l'API</strong> sur les différentes pages du site Kanap. 
+                                Le backend et frontend du projet ont déjà été réalisé Je devais rendre le tout fonctionnel grâce au <strong>JavaScript (vanilla)</strong>. 
+                                Voici ce que j'ai intégré au site internet : 
                             </p> <br>
-
                             <ul>
-                                <li> - Affichage des produits sur la page d'accueil </li>
+                                <li> - <strong>Affichage des produits</strong> sur la page d'accueil </li>
                                 <li> 
-                                    - Affichage de la page du produit cliqué, l'utilisateur peut choisir 
-                                    une couleur et une quantité et ajouter le produit à son panier.
-                                </li>
-                                <li> - Le nombre total d'articles présents dans le panier apparaît à côté du lien panier </li>
-                                <li> 
-                                    - Sur la page panier, l'utilisateur accède à la liste des produits ajoutés précédemment, 
-                                    il peut modifier la quantité et supprimer un produit du panier. Le total du nombre d'articles 
-                                    et le prix se mettent à jour de façon dynamique
+                                    - Affichage de la page du produit cliqué, l'utilisateur peut <strong>choisir 
+                                    une couleur et une quantité et ajouter le produit à son panier</strong>.
                                 </li>
                                 <li> 
-                                    - L'utilisateur doit remplir un formulaire avant de pouvoir commander, chaque champ affiche 
-                                    un message d'erreur ou de validation en fonction de la saisie effectuée par l'utilisateur.
+                                    - Affichage des produits ajoutés au panier, <strong>modification de la quantité et supression d'un produit</strong>
+                                </li>
+                                <li> 
+                                    - L'utilisateur doit remplir un <strong>formulaire</strong> avant de pouvoir commander
                                 </li>
                                 <li>
-                                    - Une fois le formulaire rempli de façon valide, l'utilisateur sera redirigé vers une page de 
-                                    confirmation où un numéro de commande apparaîtra
+                                    - Une fois le formulaire validé, redirection de l'utilisateur et <strong>affichage d'un numéro de commande</strong>
                                 </li>
                             </ul>
                            
                         
                             <div class="projects--item__skills">
                                 <h4> Stack technique </h4>
-                                <i class="fa-brands fa-js"></i>
+                                <i class="fa-brands fa-js" aria-label="javascript"></i>
                             </div>
                         </div>
                 </section>
@@ -306,7 +325,7 @@
                            
                             <div class="projects--item__skills">
                                 <h4> Stack technique </h4>
-                                <i class="fa-brands fa-node-js"></i>
+                                <i class="fa-brands fa-node-js" aria-label="node.js"></i>
                                 <img class="projects--item__skillsLogo"src="./images/mongodb_logo.png" alt="logo de mongodb">
                                 <img class="projects--item__skillsLogo "src="./images/express_logo.png" alt="logo express">
                             </div>
@@ -325,31 +344,23 @@
                         </div>
                         <div class="projects--item__content">
 
-                            
-
-
-
-
-
-
-
                             <p> 
                                 Pitch: Développeur dans une agence Web, je devais réaliser <strong>un réseau social d'entreprise</strong>
-                                Pour réaliser se projet full stack, j'ai utilisé la stack MERN. Voici les fonctionnalités demandées :
+                                Pour réaliser se projet full stack, j'ai utilisé la <strong>stack MERN</strong>. Voici les fonctionnalités demandées :
                             </p> <br>
 
                             <ul>
                                 <li> - Une page d'accueil où les posts des utilisateurs sont affichés dans l'ordre antéchronologique</li>
-                                <li> - L'utilisateur doit pouvoir créer un post avec un image, le supprimer et le modifier </li>
-                                <li> - L'utilisateur doit pouvoir liker les posts des autres utilisateurs</li>
-                                <li> - L'utilisateur peut modifier son profil (photo, informations) et supprimer son compte</li>
-                                <li> - Un utilisateur admin pourra modifier/supprimer les posts des utilisateurs</li>
+                                <li> - L'utilisateur doit pouvoir <strong>créer un post avec un image, le supprimer et le modifier</strong> </li>
+                                <li> - L'utilisateur doit pouvoir <strong>liker les posts des autres utilisateurs</strong></li>
+                                <li> - L'utilisateur peut <strong>modifier son profil (photo, informations) et supprimer son compte</strong></li>
+                                <li> - <strong>Un utilisateur admin</strong> pourra modifier/supprimer les posts des utilisateurs</li>
                             </ul>
                            
                             <div class="projects--item__skills">
                                 <h4> Stack technique </h4>
-                                <i class="fa-brands fa-react"></i>
-                                <i class="fa-brands fa-node-js"></i>
+                                <i class="fa-brands fa-react" aria-label="react"></i>
+                                <i class="fa-brands fa-node-js" aria-label="node.js"></i>
                                 <img class="projects--item__skillsLogo"src="./images/mongodb_logo.png" alt="logo de mongodb">
                                 <img class="projects--item__skillsLogo "src="./images/express_logo.png" alt="logo express">
                             </div>
@@ -357,8 +368,79 @@
                 </section>
 
             </div>
+
+            <div class="scroll scroll--projects">
+                <a class="scroll--arrow " href="#passions"><img src="./images/scroll.svg" alt="flèche pour scroller"></a>
+            </div>
             
         </article>
+
+        <article id="passions">
+            <h2 class="passions--title"> Mes passions</h2>
+
+            <div class="passions--container" >
+            <section class="passions--item" id="graphisme">
+                <h3 class="passions--item__title">Le graphisme</h3>
+                <p class="passions--item__text"> Avant le développement, le graphisme a toujours été une passion. 
+                    J'ai appris à créer des visuels en <strong>autodidacte</strong> et j'ai eu la chance de travailler sur divers projets.
+                    Cela explique mon intêret particulier pour le côté <strong>front-end</strong> : j'adore créer et allier mes compétences.
+                    <br><br>
+                    Quelques-unes de mes réalisations :
+                </p>
+                <div class="passions--item__img">
+                    <img src="./images/arter_shop.jpg" alt="Logo de Arter Shop">
+                    <img src="./images/mgz_101.jpg" alt="Pochette Mgz - 101 vol2">
+                    <img src="./images/Laylow.jpg" alt="Illustration de laylow">
+                </div>
+            </section>
+
+            <section class="passions--item" id="rap">
+                <h3 class="passions--item__title">Le rap</h3>
+                <p class="passions--item__text"> 
+                    J'adore écouter de la musique quand je travaille, ça permet de me <strong>concentrer</strong>, les artistes
+                    que j'écoute sont des <strong>sources d'inspirations</strong>. Le rap est une réèlle passion, écrire des textes me permet
+                    de laisser parler ma <strong>créativité</strong>. <br><br>
+                    Mes artistes favoris :
+                </p>
+                <div class="passions--item__img">
+                    <a href="https://open.spotify.com/track/5KTBqEFYGxYsz5WqoRPqsM?si=2bd80b9313fe46e1" target="_blank"><i class="fa-brands fa-spotify"></i><img src="./images/josman.jpeg" alt="Photo de josman"></a>
+                    <a href="https://open.spotify.com/track/5ZjEm81TYFPfE6Ddc0memq?si=7b38c8bf9bbb438a" target="_blank"><i class="fa-brands fa-spotify"></i><img src="./images/laylow.png" alt="Photo de laylow"></a>
+                    <a href="https://open.spotify.com/track/7CAoGOFte5I1unfkE69o4w?si=bd5947ba7be24fc5" target="_blank"><i class="fa-brands fa-spotify"></i><img src="./images/alphawann.jpeg" alt="Photo d'Alpha Wann"></a>
+                </div>
+            </section>
+
+            <section class="passions--item" id="sport">
+                <h3 class="passions--item__title">Le sport</h3>
+                <p class="passions--item__text"> 
+                   Le sport a toujours été un moyen de me défouler. Depuis petit, je suis passionné par le <strong>football</strong>, j'ai joué 
+                   en club de mon enfance jusqu'à ma majorité. Les valeurs que véhiculent les sports collectifs sont indispensables
+                   et servent dans la vie : <strong>fairplay, esprit d'équipe, inclusion, dépassement de soi</strong> etc..
+                </p>
+            </section>
+        </div>
+        <div class="scroll scroll--projects">
+            <a class="scroll--arrow " href="#contact"><img src="./images/scroll.svg" alt="flèche pour scroller"></a>
+        </div>
+        </article>
+
+        <footer id="contact">
+            <div class="contact--content">
+            <h2 class="contact--content__title">Contactez-moi</h2>
+            <p class="contact--content__text"> Je reste à l'écoute de vos <strong>opportunités</strong> et <strong>projets</strong>.
+            <br>Vous pouvez me retrouver ici : 
+            </p>
+            <div class="hero--content__link">
+                <a href="https://www.linkedin.com/in/antoine-amoroso-developpeur-web/" target="_blank" aria-label="lien linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/antoinea95" target="_blank" aria-label="lien github"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.behance.net/antoinea95" aria-label="lien vers behance" target="_blank"><i class="fa-brands fa-behance"></i></a> 
+                <a href="mailto:antoineamr95@gmail.com" aria-label="envoyer un mail"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
+        <div class="scroll scroll--top">
+            <a class="scroll--arrow" href="#home"><img src="./images/scroll_top.svg" alt="flèche pour scroller"></a>
+        </div>
+
+        </footer>
     </main>
 <script src="./js/index.js"></script>
 </body>
