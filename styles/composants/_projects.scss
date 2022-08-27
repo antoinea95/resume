@@ -1,9 +1,14 @@
 #projects {
-    margin: 15rem auto;
+    position: relative;
+    scroll-margin-top: 10rem;
+    @include flex(center, center, column);
+    margin: 5rem auto;
     width: 90%;
+    min-height: 100vh;
 
     @include desktopScreen {
-        height: 100vh;
+        scroll-margin-top: 2rem;
+        margin: 0 auto;
     }
 
 }
@@ -14,6 +19,7 @@
             display: grid;
             grid-template-rows: repeat(3, auto);
             grid-template-columns: repeat(2, 1fr);
+            gap: 2.5rem;
         }
 
         @include desktopScreen {
@@ -23,7 +29,10 @@
 }
 
 .projects--intro {
-    
+    width: 90%;
+    text-align: center;
+    margin: 2rem 0;
+
     &__title {
         font-size: 2rem;
     }
@@ -35,18 +44,20 @@
 
 
 .projects--item {
+    width: 30rem;
     grid-auto-rows: auto;
     @include flex (flex-start, center, column);
-    margin: 5rem 2rem;
+    margin: 2rem auto; 
 
     &__img {
-        border: 0.1rem solid black;
+        border: 0.2rem solid $primary;
+        border-radius: 0.5rem;
         width: 100%;
         margin-bottom: 1rem;
 
         @include tabletScreen {
-            width: 40rem;
-            height: 20rem;
+            height: 18rem;
+            margin: 0;
         }
     }
 
@@ -57,7 +68,7 @@
 
         h3 {
             font-size: 2rem;
-            line-height: 5rem;
+            line-height: 3.5rem;
             margin-right: 1rem;
         }
 
@@ -112,7 +123,11 @@
         @include flex(flex-start, center, column);
         display: block;
         animation: show 200ms;
-        width: 90%;
+        width: 100%;
+        background-color: white;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        border: 0.2rem solid $primary;
     }
 
 
@@ -131,7 +146,7 @@
         }
 
         &Logo {
-            width: 10rem;
+            width: 7rem;
         }
         
         

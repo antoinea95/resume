@@ -1,11 +1,16 @@
+@import './utils/variable';
+@import './utils/mixins';
+
 @import './base/minireset';
 @import './base/typography';
-@import './utils/mixins';
+
 
 @import './layout/header';
 @import './layout/main';
 @import './layout/hero';
+@import './layout/footer';
 
-@import './composants/scrollArrow';
+@import './composants/scroll';
 @import './composants/itemslide';
 @import './composants/projects';
+@import './composants/passion';

@@ -6,9 +6,17 @@
         height: 10rem;
         animation: jump 1.5s infinite;
 
+        &--top {
+            animation-direction: reverse;
+        }
+
+        &--projects {
+            right: -5%;
+        }
+
         @include desktopScreen {
             display: block;
-            bottom: 10%;
+            bottom: 13%;
         }
     }
 
@@ -24,6 +32,6 @@
     }
 
     60% {
-        transform: translateY(-2rem);
+        transform: translateY(-0.5rem);
     }
 }

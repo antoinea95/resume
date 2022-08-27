@@ -3,13 +3,12 @@
     position: fixed;
     width: 100%;
     top: 0;
-    padding: 3rem 3rem 0 3rem;
+    padding: 1rem 3rem;
     background-color: white;
-
     @include flex(space-between, center, row);
 
-    &--logo img {
-        width: 5rem;
+    &--logo  img {
+        width: 8rem;
     }
 
     &--burger {
@@ -31,12 +30,13 @@
         background-color: white;
         height: 17rem;
         padding: 1rem 2rem;
+        border-radius: 0.5rem;
 
         @include tabletScreen {
             opacity: 1;
-            position: initial;
-            height: auto;
+            position: static;
             width: 70%;
+            height: auto;
             max-width: 50rem;
             float: right;
         }

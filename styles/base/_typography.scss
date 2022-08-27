@@ -6,21 +6,27 @@
 
 html {
     font-size: 10px;
+    scroll-behavior: smooth;
 }
 
 body {
     min-width: 375px;
     margin: 0 auto;
     font-family: 'Poppins', sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 1.5rem;
 }
 
 h1, h2 {
     font-family: 'Storybook', cursive;
+    color: $primary;
 }
 
 h3, h4 {
     font-family: 'Poppins', sans-serif;
-    font-weight: 900;
+    font-weight: 600;
+}
+
+strong {
+    font-weight: 600;
 }

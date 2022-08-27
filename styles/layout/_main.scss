@@ -1,6 +1,11 @@
 .main {
     position: relative;
     @include flex(space-between, center, column);
+    background-image: url(../../images/background.svg);
+    background-size: cover;
+
 }
+
+
 
 

@@ -1,11 +1,16 @@
 .slider {
     position: relative;
     margin: 2.5rem auto;
-    @include flex(center, center, column);
+    height: 100vh;
+    @include flex(flex-start, center, column);
+    scroll-margin-top: 5rem;
     width: 90%;
     max-width: 95rem;
+
     @include desktopScreen {
         height: 100vh;
+        scroll-margin-top: 2rem;
+        @include flex(center, center, column);
     }
 
     &--btn {
@@ -15,6 +20,10 @@
 
         &__next, &__previous {
             width: 5rem;
+            background-color: $secondary;
+            padding: 0.5rem;
+            border-radius: 0.5rem;
+            border: 0.2rem solid $primary;
             cursor: pointer;
             transition: all 200ms ease-in-out;
         }
@@ -25,12 +34,10 @@
                 transform: translateX(3rem);
             }
     
-            &__previous{
-                
-                &:hover {
+            &__previous:hover {
                 transform: translateX(-3rem);
                 }
-            }
+            
         }
 
         @include desktopScreen{
@@ -46,6 +53,7 @@
     display: none;
     width: 80%;
     max-width: 70rem;
+    padding: 1.5rem;
 
     &--title {
         margin-bottom: 3rem;
@@ -61,11 +69,51 @@
             font-weight: 600;
         }
     }
+
+    &--content {
+        align-self: center;
+        @include flex(space-around, flex-start, column);
+        @include tabletScreen {
+            @include flex(space-around, center, row);
+        }
+        width: 100%;
+        max-width: 50rem;
+
+        i {
+            font-size: 2rem;
+
+            @include tabletScreen {
+                font-size: 2.5rem;
+                margin-right: 1rem;
+                margin-bottom: 1rem;
+            }
+            
+        }
+        
+        &__hardSkills {
+
+            margin-bottom: 3rem;
+
+            img {
+                width: 6rem;
+
+                @include desktopScreen {
+                    width: 7rem;
+                    margin-right: 1rem;
+                }
+            }
+
+            p {
+                font-weight: 600;
+            }
+        }
+    }
 }
 
 .active {
     animation: slide 500ms;
     display: block;
+    @include flex(flex-start, flex-start, column);
 }
 
 @keyframes slide {
