@@ -1,11 +1,7 @@
+// ajustement des éléments du site et ajout du background
 .main {
-    position: relative;
-    @include flex(space-between, center, column);
-    background-image: url(../../images/background.svg);
-    background-size: cover;
-
+  position: relative;
+  @include flex(space-between, center, column);
+  background-image: url(../../images/background.svg);
+  background-size: cover;
 }
-
-
-
-

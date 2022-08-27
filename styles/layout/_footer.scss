@@ -1,20 +1,16 @@
+// style de la partie contact
 #contact {
-    position: relative;
-    height: 100vh;
-    width: 95%;
-    @include flex(center, center, column);
+  position: relative;
+  height: 100vh;
+  width: 95%;
+  @include flex(center, center, column);
 }
 
 .contact--content {
-    @include flex(center, center, column);
+  @include flex(center, center, column);
 
-    &__title {
-        font-size: 2rem;
-        margin-bottom: 2rem;
-    }
-
-    &__text {
-        text-align: center;
-        margin-bottom: 2rem;
-    }
+  &__text {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
 }

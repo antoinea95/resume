@@ -1,37 +1,24 @@
+// flèche pour scroller de catégorie en catégorie
 .scroll {
-        display: none;
-        position: absolute;
-        cursor: pointer;
-        width: 10rem;
-        height: 10rem;
-        animation: jump 1.5s infinite;
+  display: none;
+  position: absolute;
+  cursor: pointer;
+  width: 10rem;
+  height: 10rem;
+  animation: jump 1.5s infinite;
 
-        &--top {
-            animation-direction: reverse;
-        }
+  // flèche décalée sur le côté droit de la page
+  &--projects {
+    right: -5%;
+  }
 
-        &--projects {
-            right: -5%;
-        }
+  // flèche du footer pour remonter à la partie hero
+  &--top {
+    animation-direction: reverse;
+  }
 
-        @include desktopScreen {
-            display: block;
-            bottom: 13%;
-        }
-    }
-
-
-
-@keyframes jump {
-    0%, 100% {
-        transform: translateY(0);
-    }
-
-    20% {
-        transform: translateY(10rem);
-    }
-
-    60% {
-        transform: translateY(-0.5rem);
-    }
+  @include desktopScreen {
+    display: block;
+    bottom: 13%;
+  }
 }

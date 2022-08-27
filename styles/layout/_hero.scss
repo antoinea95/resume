@@ -1,82 +1,83 @@
+// style du bloc hero
 .hero {
-    position: relative;
-    max-width: 90rem;
-    width: 80%;
+  position: relative;
+  max-width: 90rem;
+  width: 80%;
+  height: 100vh;
+  padding-top: 5rem;
+  @include flex(space-around, center, row);
+
+  @include tabletScreen {
+    margin: 20rem auto;
+    width: 90%;
+  }
+
+  @include desktopScreen {
+    margin: 0 auto;
     height: 100vh;
-    padding-top: 5rem;
-    @include flex(space-around, center, row);
+  }
 
-    @include tabletScreen {
-      margin: 20rem auto;
-      width: 90%;
-    }
-
-    @include desktopScreen {
-      margin: 0 auto;
-      height: 100vh;
-    }
-
+  // affichage de la photo a partir du format tablette
   &--picture {
     display: none;
-    
+
     @include tabletScreen {
-        display: block;
-        overflow: hidden;
-        border-radius: 50%;
-        border: 0.2rem solid $primary;
-        width: 20rem;
-        height: 20rem;
-        background-color: white;
+      display: block;
+      overflow: hidden;
+      border-radius: 50%;
+      border: 0.2rem solid $primary;
+      width: 20rem;
+      height: 20rem;
+      background-color: white;
     }
 
     @include desktopScreen {
       width: 25rem;
       height: 25rem;
     }
- 
   }
 
+  // style de la partie texte
   &--content {
-
     @include flex(space-between, flex-start, column);
 
     &__title {
-        font-size: 4rem;
-        line-height: 4rem;
-      }
-    
-      &__subtitle {
-        font-family: 'Poppins';
-        font-size: 1.7rem;
-        text-transform: uppercase;
-        font-weight: 600;
-      }
-    
-      &__text {
-        font-weight: 400;
-        max-width: 30rem;
-        margin: 1rem 0;
-      }
-    
-      &__link {
-        @include flex(space-between, center, row);
-        background-color: $secondary;
-        border-radius: 0.5rem;
-        border: 0.2rem solid $primary;
-        padding: 1rem 2rem;
-        width: 20rem;
+      font-size: 4rem;
+      line-height: 4rem;
+    }
 
-        a {
-          font-size: 2.5rem;
-          text-decoration: none;
-          color: $primary;
-          transition: all 200ms ease-in-out;
+    &__subtitle {
+      font-family: "Poppins";
+      font-size: 1.7rem;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
 
-          &:hover {
-            color: white;
-          }
+    &__text {
+      font-weight: 400;
+      max-width: 30rem;
+      margin: 1rem 0;
+    }
+
+    // bloc des liens vers mes réseaux sociaux
+    &__link {
+      @include flex(space-between, center, row);
+      background-color: $secondary;
+      border-radius: 0.5rem;
+      border: 0.2rem solid $primary;
+      padding: 1rem 2rem;
+      width: 20rem;
+
+      a {
+        font-size: 2.5rem;
+        text-decoration: none;
+        color: $primary;
+        transition: all 200ms ease-in-out;
+
+        &:hover {
+          color: white;
         }
       }
-
+    }
   }
 }

@@ -1,0 +1,42 @@
+// keyframes pour le slider de la partie présentation
+@keyframes slide {
+    from {
+      transform: translateX(30rem);
+      opacity: 0;
+    }
+  
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+// keyframes pour l'animation des flèches 
+
+@keyframes jump {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    20% {
+        transform: translateY(10rem);
+    }
+
+    60% {
+        transform: translateY(-0.5rem);
+    }
+}
+
+// keyframes pour l'affichage des détails du projet
+
+@keyframes show {
+    from {
+        transform: translateY(-10rem);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

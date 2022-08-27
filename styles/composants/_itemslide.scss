@@ -1,131 +1,115 @@
+// bloc slider partie presentation
 .slider {
-    position: relative;
-    margin: 2.5rem auto;
+  position: relative;
+  margin: 2.5rem auto;
+  height: 100vh;
+  @include flex(flex-start, center, column);
+  scroll-margin-top: 5rem;
+  width: 90%;
+  max-width: 95rem;
+
+  @include desktopScreen {
     height: 100vh;
-    @include flex(flex-start, center, column);
-    scroll-margin-top: 5rem;
-    width: 90%;
-    max-width: 95rem;
+    scroll-margin-top: 2rem;
+    @include flex(center, center, column);
+  }
+
+  // style des flèches de défilement
+  &--btn {
+    width: 75%;
+    padding: 2rem;
+    @include flex(space-between, center, row);
+
+    &__next,
+    &__previous {
+      width: 5rem;
+      background-color: $secondary;
+      padding: 0.5rem;
+      border-radius: 0.5rem;
+      border: 0.2rem solid $primary;
+      cursor: pointer;
+      transition: all 200ms ease-in-out;
+    }
 
     @include desktopScreen {
-        height: 100vh;
-        scroll-margin-top: 2rem;
-        @include flex(center, center, column);
+      position: absolute;
+      width: 100%;
+
+      // centre les flèches verticalement
+      top: 50%;
+      transform: translateY(-50%);
+
+      // hover sur les flèches de défilement
+      &__next:hover {
+        transform: translateX(3rem);
+      }
+
+      &__previous:hover {
+        transform: translateX(-3rem);
+      }
     }
-
-    &--btn {
-        width: 75%;
-        padding: 2rem;
-        @include flex(space-between, center, row);
-
-        &__next, &__previous {
-            width: 5rem;
-            background-color: $secondary;
-            padding: 0.5rem;
-            border-radius: 0.5rem;
-            border: 0.2rem solid $primary;
-            cursor: pointer;
-            transition: all 200ms ease-in-out;
-        }
-
-        @include tabletScreen {
-
-            &__next:hover {
-                transform: translateX(3rem);
-            }
-    
-            &__previous:hover {
-                transform: translateX(-3rem);
-                }
-            
-        }
-
-        @include desktopScreen{
-            position: absolute;
-            width: 100%;
-            top: 50%;
-            transform: translateY(-50%);
-        }
-    }
+  }
 }
 
+// style des items du slider
 .item {
-    display: none;
-    width: 80%;
-    max-width: 70rem;
-    padding: 1.5rem;
+  display: none;
+  width: 80%;
+  max-width: 70rem;
+  padding: 1.5rem;
 
-    &--title {
-        margin-bottom: 3rem;
-        font-size: 2rem;
+  &--title {
+    margin-bottom: 3rem;
+  }
+
+  &--text {
+    line-height: 2rem;
+    font-weight: 400;
+  }
+
+  &--content {
+    align-self: center;
+    @include flex(space-around, flex-start, column);
+    width: 100%;
+    max-width: 50rem;
+
+    @include tabletScreen {
+      @include flex(space-around, center, row);
     }
 
-    &--text {
-        line-height: 2rem;
-        font-weight: 400;
-        font-size: 1.5rem;
+    // style des pictogrammes partie compétences
+    i {
+      font-size: 2rem;
 
-        strong {
-            font-weight: 600;
-        }
+      @include tabletScreen {
+        font-size: 2.5rem;
+        margin-right: 1rem;
+        margin-bottom: 1rem;
+      }
     }
 
-    &--content {
-        align-self: center;
-        @include flex(space-around, flex-start, column);
-        @include tabletScreen {
-            @include flex(space-around, center, row);
+    &__hardSkills {
+      margin-bottom: 3rem;
+
+      img {
+        width: 6rem;
+
+        @include desktopScreen {
+          width: 7rem;
+          margin-right: 1rem;
         }
-        width: 100%;
-        max-width: 50rem;
+      }
 
-        i {
-            font-size: 2rem;
-
-            @include tabletScreen {
-                font-size: 2.5rem;
-                margin-right: 1rem;
-                margin-bottom: 1rem;
-            }
-            
-        }
-        
-        &__hardSkills {
-
-            margin-bottom: 3rem;
-
-            img {
-                width: 6rem;
-
-                @include desktopScreen {
-                    width: 7rem;
-                    margin-right: 1rem;
-                }
-            }
-
-            p {
-                font-weight: 600;
-            }
-        }
+      p {
+        font-weight: 600;
+      }
     }
+  }
 }
 
+// lorsque l'item est affiché
 .active {
-    animation: slide 500ms;
-    display: block;
-    @include flex(flex-start, flex-start, column);
-}
-
-@keyframes slide {
-    from {
-        transform: translateX(30rem);
-        opacity: 0;
-    }
-
-    to {
-        transform: translateX(0);
-        opacity: 1;
-    }
-
-
+  animation: slide 500ms;
+  display: block;
+  @include flex(flex-start, flex-start, column);
 }
