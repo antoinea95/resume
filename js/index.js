@@ -72,7 +72,6 @@ const allToggle = document.querySelectorAll(".projects--item__toggle");
 for (let i = 0; i < allToggle.length; i++) {
   allToggle[i].addEventListener("click", () => {
     const content = document.querySelectorAll(".projects--item__content");
-    const contentOn = document.querySelector(".projects--item__contentOn");
 
     // au clique ajout de la classe contentOn pour afficher les détails et affichage du pictogramme -
     content[i].classList.toggle("projects--item__contentOn");

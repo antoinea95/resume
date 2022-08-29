@@ -5,10 +5,10 @@
   min-height: 100vh;
   margin: 5rem auto;
   width: 90%;
-  scroll-margin-top: 15rem;
+  scroll-margin-top: 10rem;
 
   @include desktopScreen {
-    scroll-margin-top: 5rem;
+    scroll-margin-top: 4rem;
     margin: 0 auto;
   }
 }
