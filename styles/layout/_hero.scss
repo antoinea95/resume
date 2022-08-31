@@ -29,6 +29,7 @@
       width: 20rem;
       height: 20rem;
       background-color: white;
+      animation: welcome 600ms 600ms backwards;
     }
 
     @include desktopScreen {
@@ -40,6 +41,7 @@
   // style de la partie texte
   &--content {
     @include flex(space-between, flex-start, column);
+    animation: welcome--slide 600ms 600ms backwards;
 
     &__title {
       font-size: 4rem;

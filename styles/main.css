@@ -1,5 +1,33 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
+@keyframes welcome {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  95% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes welcome--slide {
+  0% {
+    transform: translateX(-20rem);
+    z-index: -1;
+    opacity: 0;
+  }
+  95% {
+    transform: translateX(2rem);
+    opacity: 1;
+    z-index: 1;
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
 @keyframes slide {
   from {
     transform: translateX(30rem);
@@ -121,6 +149,7 @@ strong {
   justify-content: space-between;
   flex-direction: row;
   align-items: center;
+  animation: slide 600ms;
 }
 .header--logo img {
   width: 8rem;
@@ -252,6 +281,7 @@ strong {
     width: 20rem;
     height: 20rem;
     background-color: white;
+    animation: welcome 600ms 600ms backwards;
   }
 }
 @media screen and (min-width: 1269px) {
@@ -265,6 +295,7 @@ strong {
   justify-content: space-between;
   flex-direction: column;
   align-items: flex-start;
+  animation: welcome--slide 600ms 600ms backwards;
 }
 .hero--content__title {
   font-size: 4rem;
@@ -462,6 +493,31 @@ strong {
   justify-content: flex-start;
   flex-direction: column;
   align-items: flex-start;
+}
+
+.resume {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  width: 6rem;
+  height: 6rem;
+  background-color: #eebbc3;
+  border-radius: 0.5rem;
+  border: 0.2rem solid #232946;
+  transition: all 300ms ease-in-out;
+}
+.resume:hover {
+  transform: scale(1.1);
+}
+.resume:hover a {
+  color: white;
+}
+.resume a {
+  text-decoration: none;
+  color: #232946;
+  font-size: 1.5rem;
+  font-weight: 600;
 }
 
 #projects {
