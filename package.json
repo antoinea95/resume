@@ -1,0 +1,21 @@
+{
+  "name": "resume",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass":"sass --watch ./styles/main.scss:./public/css/style.css --style compressed ",
+    "prefix": "postcss ./public/css/style.css --use autoprefixer -d ./public/css/prefixed/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antoinea95/resume.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "browserslist": "last 4 versions",
+  "bugs": {
+    "url": "https://github.com/antoinea95/resume/issues"
+  },
+  "homepage": "https://github.com/antoinea95/resume#readme"
+}
