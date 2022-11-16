@@ -56,7 +56,11 @@
   display: none;
   width: 80%;
   max-width: 70rem;
-  padding: 1.5rem;
+  height: 45rem;
+
+  @include tabletScreen {
+    height: 25rem;
+  }
 
   &--title {
     margin-bottom: 3rem;
@@ -111,7 +115,7 @@
 .active {
   animation: slide 500ms;
   display: block;
-  @include flex(flex-start, flex-start, column);
+  @include flex(center, flex-start, column);
 }
 
 // lien pour télécharger mon CV
@@ -124,6 +128,7 @@
   border-radius: 0.5rem;
   border: 0.2rem solid $primary;
   transition: all 300ms ease-in-out;
+  margin: 2rem;
 
 
   &:hover {
